@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane id="userProfilePane" fx:id="userProfilePane" prefHeight="650.0" prefWidth="50.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="650.0" prefWidth="50.0" spacing="40.0" style="-fx-background-color: linear-gradient(#0fc56d, #c0e8af);;">
+               <children>
+                  <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView id="userIamge" fx:id="userProfileImage" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="50.0">
+                     <children>
+                        <ImageView id="onlinFriends" fx:id="onlinFriends" fitHeight="26.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="50.0">
+                     <children>
+                        <ImageView id="addFriendIcon" fx:id="addFriendIcon" fitHeight="26.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="50.0">
+                     <children>
+                        <ImageView id="notificationIcon" fx:id="notificationIcon" fitHeight="26.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="50.0">
+                     <children>
+                        <ImageView id="editProfileIcon" fx:id="editProfileIcon" fitHeight="26.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="50.0" spacing="10.0">
+                     <children>
+                        <ImageView id="groupChatIcon" fx:id="groupChatIcon" fitHeight="26.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="50.0">
+                     <children>
+                        <ImageView id="signOutIcon" fx:id="signOutIcon" fitHeight="26.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <Label layoutX="322.0" layoutY="9.0" prefHeight="35.0" prefWidth="245.0" text="Invitations" textAlignment="CENTER" textFill="#0fc56d">
+         <font>
+            <Font name="Comic Sans MS Bold" size="31.0" />
+         </font>
+      </Label>
+      <VBox layoutX="51.0" layoutY="60.0" prefHeight="587.0" prefWidth="747.0" style="-fx-background-color: white;">
+         <children>
+            <ListView fx:id="userInvitationviewList" prefHeight="590.0" prefWidth="747.0" />
+         </children>
+      </VBox>
+      <Label fx:id="invitationCount" layoutX="66.0" layoutY="22.0" text="count" textFill="#0fc56d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

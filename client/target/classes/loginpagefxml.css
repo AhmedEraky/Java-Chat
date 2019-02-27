@@ -1,0 +1,11 @@
+/*
+ * Empty Stylesheet file.
+ */
+.mainFxmlClass {
+     
+}
+
+#loginBtn
+{
+    -fx-background-color:linear-gradient(#0fc56d, #c0e8af);
+}

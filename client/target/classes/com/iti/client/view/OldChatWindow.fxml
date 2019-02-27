@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane
+        id="BorderPane"
+        maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="559.0" prefWidth="513.0"
+            xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <center>
+        <ScrollPane fx:id="scrollChatRoom" prefHeight="410.0" prefWidth="472.0">
+            <VBox fx:id="chatRoomVbox" prefHeight="400.0" prefWidth="461.0" />
+         <BorderPane.margin>
+            <Insets left="20.0" right="20.0" />
+         </BorderPane.margin>
+        </ScrollPane>
+    </center>
+
+    <bottom>
+        <AnchorPane prefHeight="57.0" prefWidth="513.0" BorderPane.alignment="CENTER">
+            <children>
+                
+                <TextField fx:id="newMessageTF" layoutX="21.0" layoutY="14.0"
+                           prefHeight="29.0" prefWidth="471.0" AnchorPane.bottomAnchor="14.0" />
+            </children>
+        </AnchorPane>
+    </bottom>
+   <right>
+      <VBox prefHeight="390.0" prefWidth="1.0" BorderPane.alignment="CENTER" />
+   </right>
+   <top>
+      <AnchorPane prefHeight="101.0" prefWidth="513.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="userImage" fitHeight="75.0" fitWidth="114.0" layoutX="56.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="userName" layoutX="216.0" layoutY="34.0" prefHeight="42.0" prefWidth="287.0" text="Label" />
+         </children>
+      </AnchorPane>
+   </top>
+
+</BorderPane>

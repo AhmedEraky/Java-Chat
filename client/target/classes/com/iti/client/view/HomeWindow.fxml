@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" maxHeight="620.0" maxWidth="1040.0" prefHeight="620.0" prefWidth="1040.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+    <left>
+        <VBox maxHeight="1.7976931348623157E308" prefHeight="545.0" prefWidth="288.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox fx:id="onlineUsersHbox" minHeight="-Infinity" minWidth="-Infinity" prefHeight="76.0" prefWidth="288.0">
+                    <children>
+                        <Label prefHeight="50.0" prefWidth="124.0" text="friend request" textAlignment="CENTER" textFill="#fc6747">
+                            <font>
+                                <Font name="SansSerif Regular" size="14.0" />
+                            </font>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                            <opaqueInsets>
+                                <Insets bottom="10.0" />
+                            </opaqueInsets>
+                        </Label>
+                        <Label fx:id="userInvitationCount" prefHeight="48.0" prefWidth="94.0" text="0" textFill="#fc6747">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <font>
+                                <Font name="SansSerif Regular" size="14.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <ListView fx:id="listView" prefHeight="470.0" prefWidth="185.0" />
+            </children>
+        </VBox>
+    </left>
+    <top>
+        <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #2A2E37;" BorderPane.alignment="CENTER">
+            <right>
+                <HBox prefHeight="24.0" prefWidth="30.0" BorderPane.alignment="CENTER" />
+            </right>
+            <left>
+                <HBox prefWidth="259.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <VBox>
+                            <HBox.margin>
+                                <Insets left="10.0" top="30.0" />
+                            </HBox.margin>
+                            <children>
+                                <Label fx:id="usernameLabel" text="User Name" textFill="#fa6648">
+                                    <font>
+                                        <Font name="HelveticaNeue Medium" size="14.0" />
+                                    </font>
+                                </Label>
+                                <ComboBox fx:id="statusComboBox" prefHeight="25.0" prefWidth="101.0" promptText="Status">
+                                    <items>
+                                        <FXCollections fx:factory="observableArrayList">
+                                            <String fx:value="Online" />
+                                            <String fx:value="Away" />
+                                            <String fx:value="Busy" />
+                                        </FXCollections>
+                                    </items>
+                                </ComboBox>
+                            </children>
+                        </VBox>
+                    </children></HBox>
+            </left>
+        </BorderPane>
+    </top>
+    <rotationAxis>
+        <Point3D />
+    </rotationAxis>
+    <center>
+        <Pane prefHeight="475.0" prefWidth="581.0" BorderPane.alignment="CENTER">
+            <children>
+                <ButtonBar layoutX="-135.0" layoutY="14.0" prefHeight="47.0" prefWidth="869.0">
+                    <buttons>
+                        <Button fx:id="acceptInvitationBtn" mnemonicParsing="false" text="Accept Invitation" />
+                        <Button fx:id="rejectInvitationBtn" mnemonicParsing="false" text="Reject invitation" />
+                        <Button mnemonicParsing="false" text="Show Notifications" />
+                        <Button mnemonicParsing="false" text="Invitations" />
+                        <Button fx:id="friendRequestBtn" mnemonicParsing="false" text="Friend Request" />
+                        <Button fx:id="addContactBtn" mnemonicParsing="false" prefHeight="27.0" prefWidth="129.0" text="Add Friend" />
+                    </buttons>
+                </ButtonBar>
+            <ScrollPane layoutX="14.0" layoutY="73.0">
+               <content>
+                  <VBox fx:id="chatRoomVbox" prefHeight="396.0" prefWidth="457.0" />
+               </content>
+            </ScrollPane>
+                <TextField fx:id="newMessageTF" layoutX="14.0" layoutY="506.0" prefHeight="38.0" prefWidth="648.0" promptText="Type your msg here ..." />
+                <Button fx:id="chatBtn" layoutX="676.0" layoutY="506.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" text="Send" />
+            <TextField fx:id="testTF" layoutX="513.0" layoutY="97.0" prefHeight="52.0" prefWidth="193.0" />
+            <ImageView fx:id="userProfileImage" fitHeight="150.0" fitWidth="200.0" layoutX="510.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true" />
+            </children>
+        </Pane>
+    </center>
+</BorderPane>

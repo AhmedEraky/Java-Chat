@@ -1,0 +1,16 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 22, 2019, 9:51:28 AM
+    Author     : Esraa
+*/
+#sendButton
+{
+    -fx-background-color:linear-gradient(#0fc56d, #c0e8af);
+    -fx-background-radius: 10;
+}
+
+

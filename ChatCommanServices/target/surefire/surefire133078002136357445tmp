@@ -1,0 +1,22 @@
+#surefire
+#Mon Feb 25 17:53:16 EET 2019
+testClassesDirectory=E\:\\ITI\\Java\\project\\finalfinal\\JavaChat-master\\ChatCommanServices\\target\\test-classes
+forkMode=once
+useManifestOnlyJar=true
+classPathUrl.1=E\:\\ITI\\Java\\project\\finalfinal\\JavaChat-master\\ChatCommanServices\\target\\classes
+classPathUrl.0=E\:\\ITI\\Java\\project\\finalfinal\\JavaChat-master\\ChatCommanServices\\target\\test-classes
+reportsDirectory=E\:\\ITI\\Java\\project\\finalfinal\\JavaChat-master\\ChatCommanServices\\target\\surefire-reports
+providerConfiguration=org.apache.maven.surefire.junit.JUnit3Provider
+testSuiteDefinitionTestSourceDirectory=E\:\\ITI\\Java\\project\\finalfinal\\JavaChat-master\\ChatCommanServices\\src\\test\\java
+surefireClassPathUrl.1=C\:\\Users\\Bishoy\\.m2\\repository\\org\\apache\\maven\\surefire\\surefire-api\\2.10\\surefire-api-2.10.jar
+surefireClassPathUrl.0=C\:\\Users\\Bishoy\\.m2\\repository\\org\\apache\\maven\\surefire\\surefire-junit3\\2.10\\surefire-junit3-2.10.jar
+runOrder=filesystem
+useSystemClassLoader=true
+excludes0=**/*$*
+isTrimStackTrace=true
+enableAssertions=true
+includes2=**/*TestCase.java
+failIfNoTests=false
+includes1=**/*Test.java
+includes0=**/Test*.java
+childDelegation=false

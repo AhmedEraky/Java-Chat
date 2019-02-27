@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="startServerBtn" alignment="BOTTOM_CENTER" layoutX="276.0" layoutY="333.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="182.0" style="-fx-background-color: #048747; -fx-background-radius: 10px;" text="Start Server" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="stopServerBtn" alignment="BOTTOM_CENTER" layoutX="553.0" layoutY="333.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="172.0" style="-fx-background-color: #ff6666; -fx-background-radius: 10px;" text="Stop Server" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <VBox fx:id="serverOptionsVbox" prefHeight="650.0" prefWidth="226.0" spacing="10.0" style="-fx-background-color: #05512c;">
+         <children>
+            <Label prefHeight="27.0" prefWidth="217.0" text="Create:-" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="120.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #05512c;">
+               <children>
+                  <ImageView fx:id="createUserIcon" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </ImageView>
+                  <Button fx:id="createNewUser" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="18.0" prefWidth="138.0" style="-fx-background-color: #05512c;" text="Create New User" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Label prefHeight="27.0" prefWidth="217.0" text="Display:-" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #05512c;">
+               <children>
+                  <ImageView fx:id="displayUserIcon" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </ImageView>
+                  <Button fx:id="displayUsersBtn" alignment="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="118.0" style="-fx-background-color: #05512c;" text="Display Users" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Label prefHeight="27.0" prefWidth="217.0" text="Statstics:-" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #05512c;">
+               <children>
+                  <ImageView fx:id="ofOnIcon" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </ImageView>
+                  <Button fx:id="onlineOfflineBtn" alignment="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #05512c;" text="Online and offline" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #05512c;">
+               <children>
+                  <ImageView fx:id="maleFemaleIcon" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </ImageView>
+                  <Button fx:id="maleAndFemaleBtn" alignment="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="152.0" style="-fx-background-color: #05512c;" text="Male Ande Female" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #05512c;">
+               <children>
+                  <ImageView fx:id="contriesicon" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </ImageView>
+                  <Button fx:id="coutriesBtn" alignment="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #05512c;" text="Countries" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Label prefHeight="27.0" prefWidth="217.0" text="Advirtising:-" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #05512c;">
+               <children>
+                  <ImageView fx:id="advirtisingIcon" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </ImageView>
+                  <Button fx:id="advirtisingBtn" alignment="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #05512c;" text="Advirtising" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label layoutX="361.0" layoutY="35.0" prefHeight="35.0" prefWidth="292.0" text="Server Administration" textFill="#05512c">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="startingServerlabel" layoutX="295.0" layoutY="335.0" text="Server is Starting" textFill="#048747">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
