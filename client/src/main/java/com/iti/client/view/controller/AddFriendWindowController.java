@@ -168,7 +168,8 @@ public class AddFriendWindowController extends ParentMenuBarController{
         }
     }
     public void addFriends(ActionEvent action){
-        List<String> numbers = listView.getItems();
+        //todo need to be done
+        /*List<String> numbers = listView.getItems();
         ArrayList<UserContact> contact = new ArrayList<>();
         String userPhoneNumber=mainClass.getUser().getPhno();
         for (int i = 0; i < numbers.size(); i++) {
@@ -188,7 +189,7 @@ public class AddFriendWindowController extends ParentMenuBarController{
 
         listView.getItems().clear();
 
-
+*/
 
     }
     public void addFriendsResult(int invitationAccepted, int invitationReceived, int emailReceived){

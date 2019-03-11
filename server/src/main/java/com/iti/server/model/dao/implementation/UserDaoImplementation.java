@@ -5,12 +5,17 @@ import com.iti.ChatCommanServices.model.entity.user.User;
 import com.iti.ChatCommanServices.model.exception.RegistrationDuplicateException;
 import com.iti.server.model.dal.cfg.DBConnection;
 import com.iti.server.model.dao.UserDao;
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+import org.hibernate.criterion.Restrictions;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -22,6 +27,62 @@ public class UserDaoImplementation implements UserDao {
     }
 
     @Override
+    public void persistent(User user, Session session) throws RegistrationDuplicateException {
+
+    }
+
+    @Override
+    public void delete(User user, Session session) {
+
+    }
+
+    @Override
+    public void update(User user, Session session) {
+
+    }
+
+    @Override
+    public User reterive(String userPhoneNumber, Session session) {
+        Criteria criteria=session.createCriteria(User.class).add(Restrictions.eq("userPhoneNumber",userPhoneNumber));
+        User user= (User) criteria.uniqueResult();
+        return user;
+    }
+
+    @Override
+    public boolean checkUserExist(String userPhoneNumber, Session session) {
+        return false;
+    }
+
+    @Override
+    public ArrayList<User> reteriveOnlineUsers() {
+        return null;
+    }
+
+    @Override
+    public int[] getNumbersOfFemalesAndMales(Session session) {
+        return new int[0];
+    }
+
+    @Override
+    public ResultSet getUsersByCountry(Session session) {
+        return null;
+    }
+
+    @Override
+    public ResultSet getAllOnlineAndOfflineUsers(Session session) {
+        return null;
+    }
+
+    @Override
+    public void updateStatus(String newStatus, String user, Session session) {
+        Transaction transaction=session.beginTransaction();
+        String query="update User u set u.status = :newStatus where u.userPhoneNumber = :id";
+        session.createQuery(query).setParameter("newStatus",newStatus)
+                .setParameter("id",user).executeUpdate();
+        transaction.commit();
+    }
+
+   /* @Override
     public void persistent(User user) throws RegistrationDuplicateException {
 
 
@@ -179,12 +240,12 @@ public class UserDaoImplementation implements UserDao {
     }
 
 
-    /**
+    *//**
      * Bishoy
      * this method to retrieve an array of integers
      * first element is the number of females
      * second element is the number of males
-     */
+     *//*
 
     @Override
     public int[] getNumbersOfFemalesAndMales() {
@@ -208,11 +269,11 @@ public class UserDaoImplementation implements UserDao {
         return count;
     }
 
-    /**
+    *//**
      * Bishoy
      * this method to retrieve a resultset of all countries
      * and the number of users in this country
-     */
+     *//*
     @Override
     public ResultSet getUsersByCountry() {
 
@@ -229,11 +290,11 @@ public class UserDaoImplementation implements UserDao {
     }
 
 
-    /**
+    *//**
      * Bishoy
      * this method to retrieve a resultset of all users
      * grouped and ordered by their current status
-     */
+     *//*
     @Override
     public ResultSet getAllOnlineAndOfflineUsers() {
         ResultSet resultSet = null;
@@ -257,5 +318,5 @@ public class UserDaoImplementation implements UserDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-    }
+    }*/
 }

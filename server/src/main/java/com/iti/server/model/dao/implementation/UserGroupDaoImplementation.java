@@ -6,6 +6,7 @@ import com.iti.ChatCommanServices.model.exception.UserNotFoundException;
 import com.iti.server.model.dal.cfg.DBConnection;
 import com.iti.server.model.dao.UserDao;
 import com.iti.server.model.dao.UserGroupDao;
+import org.hibernate.Session;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -20,6 +21,31 @@ public class UserGroupDaoImplementation implements UserGroupDao {
         this.dbConnection = dbConnection;
     }
 
+    @Override
+    public void persistent(ArrayList<User> users, Session session) {
+
+    }
+
+    @Override
+    public ArrayList<String> reteriveGroups(User user, Session session) {
+        return null;
+    }
+
+    @Override
+    public ArrayList<User> reteriveGroupMember(User user, String groupID, Session session) {
+        return null;
+    }
+
+    @Override
+    public void removeUser(User user, String groupID, Session session) {
+
+    }
+
+    @Override
+    public void addUser(User user, String groupID, Session session) throws DublicateEntryException, UserNotFoundException {
+
+    }
+/*
     @Override
     public void persistent(ArrayList<User> users) {
         int id=createID();
@@ -165,5 +191,5 @@ public class UserGroupDaoImplementation implements UserGroupDao {
         }
 
 
-    }
+    }*/
 }

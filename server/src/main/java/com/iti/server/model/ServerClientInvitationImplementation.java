@@ -21,6 +21,8 @@ import com.iti.server.model.dao.implementation.UserDaoImplementation;
 import com.iti.server.model.dao.implementation.UserInvitationDaoImplementation;
 import com.iti.server.model.utils.ServerUtils;
 import com.iti.server.model.utils.implementation.ServerUtilsImplementation;
+import org.hibernate.Session;
+
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
@@ -35,6 +37,7 @@ public class ServerClientInvitationImplementation extends UnicastRemoteObject im
     LoginDao loginDao;
     DBConnection dbConnection;
     public static HashMap<String, ClientServiceInterface> clients;
+    public static HashMap<String, Session> clientSession;
 
     ServerUtils utils;
 
@@ -42,6 +45,8 @@ public class ServerClientInvitationImplementation extends UnicastRemoteObject im
         this.dbConnection=dbConnection;
         clients=new HashMap<>();
         utils=new ServerUtilsImplementation();
+        clientSession=new HashMap<>();
+
     }
 
     /**
@@ -51,12 +56,14 @@ public class ServerClientInvitationImplementation extends UnicastRemoteObject im
     @Override
     public void registerClient(String clientID, ClientServiceInterface client) throws RemoteException {
         clients.put(clientID,client);
+        Session session=dbConnection.getConnection().openSession();
+        clientSession.put(clientID,session);
     }
     @Override
     public void acceptInvitation(UserInvitation userInvitation) throws RemoteException {
-        System.out.println("pressed");
+        /*System.out.println("pressed");
         UserInvitationDao userInvitationDao= new UserInvitationDaoImplementation(dbConnection);
-        userInvitationDao.deleteFromSender(userInvitation);
+        userInvitationDao.deleteFromSender(userInvitation,clientSession.get(userInvitation.getUser().getPhno()));
         UserContactDao userContactDao= new UserContactDaoImplementation(dbConnection);
         UserContact userContact = new UserContact() ;
         userContact.setPhno(userInvitation.getReceiverPhno());
@@ -65,14 +72,13 @@ public class ServerClientInvitationImplementation extends UnicastRemoteObject im
         userContact.setPhno(userInvitation.getSenderPhno());
         userContact.setContactPhno(userInvitation.getReceiverPhno());
         userContactDao.persistent(userContact);
-
-
+*/
     }
 
     @Override
     public void rejectInvitation(UserInvitation userInvitation) throws RemoteException {
         UserInvitationDao userInvitationDao= new UserInvitationDaoImplementation(dbConnection);
-        userInvitationDao.deleteFromReceiver(userInvitation);
+        userInvitationDao.deleteFromReceiver(userInvitation,clientSession.get(userInvitation.getUser().getPhno()));
     }
 
 
@@ -83,7 +89,7 @@ public class ServerClientInvitationImplementation extends UnicastRemoteObject im
         /*
         put them atributes
          */
-        int invitationAccepted = 0;//accepteInvitation
+       /* int invitationAccepted = 0;//accepteInvitation
         int emailReceived = 0;//sendEmail
         int invitationReceived = 0;//receivedInvitation
         UserDao userDao = new UserDaoImplementation(dbConnection);
@@ -128,19 +134,19 @@ public class ServerClientInvitationImplementation extends UnicastRemoteObject im
         ServerUtils utils=new ServerUtilsImplementation();
         User sender=userDao.reterive(userContacts.get(0).getPhno());
         utils.addFriendsResult(invitationAccepted, invitationReceived, emailReceived,sender, clients);
-    }
+   */ }
 
     @Override
-    public ArrayList<User> getInvitations(String UserphoneNumber) throws RemoteException {
+    public ArrayList<User> getInvitations(String userphoneNumber) throws RemoteException {
         //ArrayList<User> friendUserInvtationsList;
         UserInvitationDao userInvitationDao = new UserInvitationDaoImplementation(dbConnection);
-        return userInvitationDao.reterive(UserphoneNumber);
+        return userInvitationDao.reterive(userphoneNumber,clientSession.get(userphoneNumber));
     }
 
     @Override
-    public int getInvitationsCount(String UserphoneNumber) throws RemoteException {
+    public int getInvitationsCount(String userphoneNumber) throws RemoteException {
         UserInvitationDao userInvtationCountDao = new UserInvitationDaoImplementation(dbConnection);
-        int userInvtationCount = userInvtationCountDao.getInvtationCount(UserphoneNumber);
+        int userInvtationCount = userInvtationCountDao.getInvtationCount(userphoneNumber,clientSession.get(userphoneNumber));
         return userInvtationCount;
     }
 
@@ -148,14 +154,14 @@ public class ServerClientInvitationImplementation extends UnicastRemoteObject im
     public void ignoreInvitation(UserInvitation userInvitation) throws RemoteException {
 
         UserInvitationDao userInvtationDao = new UserInvitationDaoImplementation(dbConnection);
-        userInvtationDao.updateIgnoreFlag(userInvitation);
+        userInvtationDao.updateIgnoreFlag(userInvitation,clientSession.get(userInvitation.getUser()));
 
     }
 
     @Override
-    public ArrayList<User> getInvitationsUsingSenderPhone(String UserphoneNumber) throws RemoteException {
+    public ArrayList<User> getInvitationsUsingSenderPhone(String userphoneNumber) throws RemoteException {
         UserInvitationDao userInvitationDao = new UserInvitationDaoImplementation(dbConnection);
-        return userInvitationDao.reteriveInvitationUsingSenderPhone(UserphoneNumber);
+        return userInvitationDao.reteriveInvitationUsingSenderPhone(userphoneNumber,clientSession.get(userphoneNumber));
     }
 
 }

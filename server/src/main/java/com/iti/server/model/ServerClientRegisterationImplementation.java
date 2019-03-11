@@ -13,6 +13,8 @@ import com.iti.server.model.dao.UserDao;
 import com.iti.server.model.dao.implementation.UserDaoImplementation;
 import com.iti.server.model.utils.ServerUtils;
 import com.iti.server.model.utils.implementation.ServerUtilsImplementation;
+import org.hibernate.Session;
+
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.HashMap;
@@ -22,12 +24,15 @@ public class ServerClientRegisterationImplementation extends UnicastRemoteObject
     LoginDao loginDao;
     DBConnection dbConnection;
     public static HashMap<String, ClientServiceInterface> clients;
+    public static HashMap<String, Session> clientSession;
+
     ServerUtils utils;
 
     public ServerClientRegisterationImplementation(DBConnection dbConnection) throws RemoteException {
         this.dbConnection=dbConnection;
         clients=new HashMap<>();
         utils=new ServerUtilsImplementation();
+        clientSession=new HashMap<>();
     }
 
     /**
@@ -37,17 +42,33 @@ public class ServerClientRegisterationImplementation extends UnicastRemoteObject
     @Override
     public void registerClient(String clientID, ClientServiceInterface client) throws RemoteException {
         clients.put(clientID,client);
+        Session session=dbConnection.getConnection().openSession();
+        clientSession.put(clientID,session);
     }
 
     @Override
     public void unRegistration(String userID) {
         UserDao userDao=new UserDaoImplementation(dbConnection);
-        userDao.updateStatus("offline",userID);
-        ServerClientEnteranceImplementation.clients.clear();
-        ServerClientInvitationImplementation.clients.clear();
-        ServerChatImplementation.clients.clear();
-        ServerClientUpdationImplementation.clients.clear();
-        ServerClientRegisterationImplementation.clients.clear();
+        userDao.updateStatus("offline",userID,clientSession.get(userID));
+
+        ServerClientEnteranceImplementation.clients.remove(userID);
+        ServerClientInvitationImplementation.clients.remove(userID);
+        ServerChatImplementation.clients.remove(userID);
+        ServerClientUpdationImplementation.clients.remove(userID);
+        ServerClientRegisterationImplementation.clients.remove(userID);
+
+        ServerClientEnteranceImplementation.clientSession.get(userID).close();
+        ServerClientInvitationImplementation.clientSession.get(userID).close();
+        ServerChatImplementation.clientSession.get(userID).close();
+        ServerClientUpdationImplementation.clientSession.get(userID).close();
+        ServerClientRegisterationImplementation.clientSession.get(userID).close();
+
+        ServerClientEnteranceImplementation.clientSession.remove(userID);
+        ServerClientInvitationImplementation.clientSession.remove(userID);
+        ServerChatImplementation.clientSession.remove(userID);
+        ServerClientUpdationImplementation.clientSession.remove(userID);
+        ServerClientRegisterationImplementation.clientSession.remove(userID);
+
 
 
     }

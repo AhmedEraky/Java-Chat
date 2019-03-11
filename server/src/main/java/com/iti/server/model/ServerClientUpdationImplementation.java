@@ -16,6 +16,8 @@ import com.iti.server.model.dao.implementation.UserContactDaoImplementation;
 import com.iti.server.model.dao.implementation.UserDaoImplementation;
 import com.iti.server.model.utils.ServerUtils;
 import com.iti.server.model.utils.implementation.ServerUtilsImplementation;
+import org.hibernate.Session;
+
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
@@ -27,25 +29,32 @@ public class ServerClientUpdationImplementation  extends UnicastRemoteObject imp
     LoginDao loginDao;
     DBConnection dbConnection;
     public static HashMap<String, ClientServiceInterface> clients;
+    public static HashMap<String, Session> clientSession;
+
     ServerUtils utils;
 
     public ServerClientUpdationImplementation(DBConnection dbConnection) throws RemoteException {
         this.dbConnection=dbConnection;
         clients=new HashMap<>();
         utils=new ServerUtilsImplementation();
+        clientSession=new HashMap<>();
     }
 
     @Override
     public User getProfileData(String userPhoneNumber) throws RemoteException {
         UserDao userDao=new UserDaoImplementation(dbConnection);
-        return userDao.reterive(userPhoneNumber);
-
+        if(!clientSession.containsValue(userPhoneNumber)) {
+            Session session=dbConnection.getConnection().openSession();
+            return userDao.reterive(userPhoneNumber, session);
+        }
+        else
+            return userDao.reterive(userPhoneNumber,clientSession.get(userPhoneNumber));
     }
 
     @Override
     public void notifyOffline(User user){
         UserContactDao userContactDao=new UserContactDaoImplementation(dbConnection);
-        ArrayList<User> friends=userContactDao.reteriveOnlineFriends(user.getPhno());
+        ArrayList<User> friends=userContactDao.reteriveOnlineFriends(user.getPhno(),clientSession.get(user.getPhno()));
         ServerUtils utils=new ServerUtilsImplementation();
         utils.broadcastOfflineStatus(friends,user,clients);
 
@@ -54,7 +63,7 @@ public class ServerClientUpdationImplementation  extends UnicastRemoteObject imp
     @Override
     public void notifyOnline(User user){
         UserContactDao userContactDao=new UserContactDaoImplementation(dbConnection);
-        ArrayList<User> friends=userContactDao.reteriveOnlineFriends(user.getPhno());
+        ArrayList<User> friends=userContactDao.reteriveOnlineFriends(user.getPhno(),clientSession.get(user.getPhno()));
         ServerUtils utils=new ServerUtilsImplementation();
         utils.broadcastOnlieStatus(friends,user,clients);
     }
@@ -62,7 +71,7 @@ public class ServerClientUpdationImplementation  extends UnicastRemoteObject imp
     @Override
     public ArrayList<User> getUserContacts(String phoneNumber) throws RemoteException {
         UserContactDao userContactDao =new UserContactDaoImplementation(dbConnection);
-        return userContactDao.reterive(phoneNumber);
+        return userContactDao.reterive(phoneNumber,clientSession.get(phoneNumber));
     }
 
     /**
@@ -72,16 +81,18 @@ public class ServerClientUpdationImplementation  extends UnicastRemoteObject imp
     @Override
     public void registerClient(String clientID, ClientServiceInterface client) throws RemoteException {
         clients.put(clientID,client);
+        Session session=dbConnection.getConnection().openSession();
+        clientSession.put(clientID,session);
     }
 
     @Override
     public void changeStatus(User user) throws RemoteException {
         UserDao userDao=new UserDaoImplementation(dbConnection);
-        userDao.updateStatus(user.getStatus(), user.getPhno());
+        userDao.updateStatus(user.getStatus(), user.getPhno(),clientSession.get(user.getPhno()));
         //get usercontacts
         UserContactDao userContactDao =new UserContactDaoImplementation(dbConnection);
 
-        ArrayList<User> userContacts=userContactDao.reteriveOnlineFriends(user.getPhno());
+        ArrayList<User> userContacts=userContactDao.reteriveOnlineFriends(user.getPhno(),clientSession.get(user.getPhno()));
         ServerUtils utils=new ServerUtilsImplementation();
         utils.updateUserStatusOnFriendsWindow(user, userContacts, clients);
     }
@@ -94,7 +105,7 @@ public class ServerClientUpdationImplementation  extends UnicastRemoteObject imp
     @Override
     public void updateUserInformation(User user) throws RemoteException {
         UserDao userDao=new UserDaoImplementation(dbConnection);
-        userDao.update(user);
+        userDao.update(user,clientSession.get(user.getPhno()));
     }
 
 

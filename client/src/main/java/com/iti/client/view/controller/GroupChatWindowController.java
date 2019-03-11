@@ -154,7 +154,7 @@ public class GroupChatWindowController extends ParentMenuBarController{
                                 labelNewMessage.setText(message.getMessage());
                                 labelNewMessage.setAlignment(Pos.CENTER);
                                 ImageView senderImage = new ImageView();
-                                senderImage.setImage(new Image(new ByteArrayInputStream(mainClass.getUser().getPhoto())));
+                                senderImage.setImage(new Image(new ByteArrayInputStream(mainClass.getUser().getImage())));
                                 senderImage.setFitWidth(20);
                                 senderImage.setFitHeight(20);
                                 hBox.getChildren().add(labelNewMessage);
@@ -168,7 +168,7 @@ public class GroupChatWindowController extends ParentMenuBarController{
                                 labelNewMessage.setText(message.getMessage());
                                 labelNewMessage.setAlignment(Pos.CENTER);
                                 ImageView senderImage = new ImageView();
-                                senderImage.setImage(new Image(new ByteArrayInputStream(message.getSenderUser().getPhoto())));
+                                senderImage.setImage(new Image(new ByteArrayInputStream(message.getSenderUser().getImage())));
                                 senderImage.setFitWidth(20);
                                 senderImage.setFitHeight(20);
                                 hBox.getChildren().add(senderImage);
@@ -188,7 +188,7 @@ public class GroupChatWindowController extends ParentMenuBarController{
         if(!chatSession.containsValue(chatID)){
             ObservableList<EntityMessage> messages=FXCollections.observableArrayList();
             try {
-                messages.addAll(mainClass.getServerServiceLocator().getChatService().getGroupMessages(chatID));
+                messages.addAll(mainClass.getServerServiceLocator().getChatService().getGroupMessages(chatID,mainClass.getUser()));
             } catch (RemoteException e) {
                 alertMessageException("sorry error occured in server");
             }

@@ -6,6 +6,7 @@ import com.iti.ChatCommanServices.model.entity.user.UserContact;
 import com.iti.ChatCommanServices.model.entity.user.UserInvitation;
 import com.iti.server.model.dal.cfg.DBConnection;
 import com.iti.server.model.dao.UserInvitationDao;
+import org.hibernate.Session;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -23,7 +24,57 @@ public class UserInvitationDaoImplementation implements UserInvitationDao {
     public UserInvitationDaoImplementation(DBConnection dbConnection) {
         this.dbConnection = dbConnection;
     }
+
     @Override
+    public void persistent(UserInvitation userInvitation, Session session) {
+
+    }
+
+    @Override
+    public void deleteFromSender(UserInvitation userInvitation, Session session) {
+
+    }
+
+    @Override
+    public void deleteFromReceiver(UserInvitation userInvitation, Session session) {
+
+    }
+
+    @Override
+    public int getInvtationCount(String userPhone, Session session) {
+        return 0;
+    }
+
+    @Override
+    public void update(UserInvitation userInvitation, Session session) {
+
+    }
+
+    @Override
+    public ArrayList<User> reterive(String userPhone, Session session) {
+        return null;
+    }
+
+    @Override
+    public boolean CheckInvitationExist(UserContact userContact, Session session) {
+        return false;
+    }
+
+    @Override
+    public void updatSeenFriends(String phoneNumber, Session session) {
+
+    }
+
+    @Override
+    public void updateIgnoreFlag(UserInvitation userInvitation, Session session) {
+
+    }
+
+    @Override
+    public ArrayList<User> reteriveInvitationUsingSenderPhone(String userPhoneNumber, Session session) {
+        return null;
+    }
+  /*  @Override
     public void persistent(UserInvitation userInvitation) {
 
         String persistentQuery="insert into user_invitation values(?,?,?);";
@@ -266,6 +317,6 @@ public class UserInvitationDaoImplementation implements UserInvitationDao {
     }
 
 
-
+*/
 
 }

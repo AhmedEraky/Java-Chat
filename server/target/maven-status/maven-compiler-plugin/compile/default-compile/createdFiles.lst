@@ -12,6 +12,7 @@ com\iti\server\model\ServerChatImplementation.class
 com\iti\server\view\validation\implementation\ValidationImplementation.class
 com\iti\server\admin\modal\AdminModel.class
 com\iti\server\model\dao\UserDao.class
+com\iti\server\model\statistacs\ServerInterface.class
 com\iti\server\view\factory\DataFactory.class
 com\iti\server\model\dao\LoginDao.class
 com\iti\server\model\dao\implementation\UserContactDaoImplementation.class

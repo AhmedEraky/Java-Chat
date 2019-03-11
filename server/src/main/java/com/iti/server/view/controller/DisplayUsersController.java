@@ -85,6 +85,7 @@ public class DisplayUsersController implements Initializable {
 
     AdminModelImplementation adminModelImplementation = new AdminModelImplementation();
 
+
     MainClass mainClass;
     private ValidationInterface validator = new ValidationImplementation();
 
@@ -123,7 +124,7 @@ public class DisplayUsersController implements Initializable {
             user.setStatus(statusTF.getText());
             user.setBio(bioTF.getText());
             user.setCountry(countryTF.getText());
-            user.setPhoto(null);
+            user.setImage(null);
 
             if (datePicker.getValue() == null) {
                 Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -135,7 +136,7 @@ public class DisplayUsersController implements Initializable {
             } else {
                 if (validator.validate(user, passwordTF.getText())) {
                     java.sql.Date gettedDatePickerDate = java.sql.Date.valueOf(datePicker.getValue());
-                    user.setDatBirth(gettedDatePickerDate);
+                    user.setDateBirth(gettedDatePickerDate);
                     try {
                         adminModelImplementation.updateUser(user);
                         alertMessage("Data Updated");

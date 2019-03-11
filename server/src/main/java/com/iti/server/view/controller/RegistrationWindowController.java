@@ -112,7 +112,7 @@ public class RegistrationWindowController implements Initializable {
         user.setLastName(lastNameTF.getText());
         user.setEmail(emailTF.getText());
         user.setPassword(passwordTF.getText());
-        user.setPhoto(imageByte);
+        user.setImage(imageByte);
         user.setStatus("onlineAvailable");
         if (countryCB.getValue() == null) {
             user.setCountry("");
@@ -129,7 +129,7 @@ public class RegistrationWindowController implements Initializable {
 
         //user.setDatBirth(new Date(1999, 11, 28));
         java.sql.Date gettedDatePickerDate=java.sql.Date.valueOf(datePicker.getValue());
-        user.setDatBirth(gettedDatePickerDate);
+        user.setDateBirth(gettedDatePickerDate);
 
         user.setBio(bioTA.getText());
         if (validator.validate(user, confirmationTF.getText())) {

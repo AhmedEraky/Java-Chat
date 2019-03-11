@@ -175,7 +175,7 @@ public class ParentMenuBarController implements Initializable {
     }
 
     private void setUserImage(MainClass mainClass) {
-        byte[] imageByte = mainClass.getUser().getPhoto();
+        byte[] imageByte = mainClass.getUser().getImage();
         userProfileImage.setImage(new Image(new ByteArrayInputStream(imageByte)));
     }
 }

@@ -42,7 +42,7 @@ public interface ServerChatInterface extends Remote{
 
     public ArrayList<String> getChatHistory(User user)throws RemoteException;
 
-    public ArrayList<EntityMessage> getMessages(String chatID)throws RemoteException;
+    public ArrayList<EntityMessage> getMessages(String chatID,User user)throws RemoteException;
 
     public void sendFileTransfer(EntityMessage entityMessage, String reciverID,String path) throws RemoteException;
 
@@ -52,8 +52,8 @@ public interface ServerChatInterface extends Remote{
 
     public void broadcastMessage(EntityMessage message,String groupID) throws RemoteException;
 
-    public ArrayList<EntityMessage> getGroupMessages(String groupID) throws RemoteException;
+    public ArrayList<EntityMessage> getGroupMessages(String groupID,User user) throws RemoteException;
 
-    public String validateStyle(MessageSettings settings) throws RemoteException;
+    public String validateStyle(MessageSettings settings,User user) throws RemoteException;
 
 }

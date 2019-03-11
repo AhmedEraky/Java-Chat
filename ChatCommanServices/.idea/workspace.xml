@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="467df553-61bc-46ef-ad22-2848225d8661" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/ChatCommanServices.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ChatCommanServices.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/ServerInterfaces/ServerChatInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/ServerInterfaces/ServerChatInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/Chat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/TextChat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/VideoChat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/VoiceChat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/chating/behaviour/ChattingBehaviour.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/chating/behaviour/TextChattingBehaviour.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/chating/behaviour/VideoChattingBehaviour.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/chating/behaviour/VoiceChattingBehaviour.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/message/MessageSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/message/MessageSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/message/ReceivedMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/UserChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/UserChat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/UserContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/UserContact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/UserInvitation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/UserInvitation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ChatCommanServices-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/ChatCommanServices-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/ChatCommanServices/model/ServerInterfaces/ServerChatInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/ChatCommanServices/model/ServerInterfaces/ServerChatInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/ChatCommanServices/model/entity/chat/Chat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/ChatCommanServices/model/entity/chat/Chat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/ChatCommanServices/model/entity/chat/TextChat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/ChatCommanServices/model/entity/chat/VideoChat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/ChatCommanServices/model/entity/chat/VoiceChat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/ChatCommanServices/model/entity/chat/chating/behaviour/ChattingBehaviour.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/ChatCommanServices/model/entity/chat/chating/behaviour/TextChattingBehaviour.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/ChatCommanServices/model/entity/chat/chating/behaviour/VideoChattingBehaviour.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/ChatCommanServices/model/entity/chat/chating/behaviour/VoiceChattingBehaviour.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/ChatCommanServices/model/entity/message/MessageSettings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/ChatCommanServices/model/entity/message/MessageSettings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/ChatCommanServices/model/entity/message/ReceivedMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/ChatCommanServices/model/entity/user/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/ChatCommanServices/model/entity/user/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/ChatCommanServices/model/entity/user/UserChat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/ChatCommanServices/model/entity/user/UserContact.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/ChatCommanServices/model/entity/user/UserContact.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/ChatCommanServices/model/entity/user/UserInvitation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/ChatCommanServices/model/entity/user/UserInvitation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/configFile" beforeDir="false" afterPath="$PROJECT_DIR$/../client/configFile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/main/java/com/iti/client/view/controller/AddFriendWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main/java/com/iti/client/view/controller/AddFriendWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/main/java/com/iti/client/view/controller/ChatWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main/java/com/iti/client/view/controller/ChatWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/main/java/com/iti/client/view/controller/GroupChatWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main/java/com/iti/client/view/controller/GroupChatWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/main/java/com/iti/client/view/controller/InvitationWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main/java/com/iti/client/view/controller/InvitationWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/main/java/com/iti/client/view/controller/LoginWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main/java/com/iti/client/view/controller/LoginWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/main/java/com/iti/client/view/controller/ParentMenuBarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main/java/com/iti/client/view/controller/ParentMenuBarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/main/java/com/iti/client/view/controller/RegistrationWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main/java/com/iti/client/view/controller/RegistrationWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/main/java/com/iti/client/view/controller/UpdateWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main/java/com/iti/client/view/controller/UpdateWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/AddFriendWindowController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/AddFriendWindowController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/AddFriendWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/AddFriendWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/ChatWindowController$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/ChatWindowController$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/ChatWindowController$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/ChatWindowController$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/ChatWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/ChatWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/GroupChatWindowController$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/GroupChatWindowController$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/GroupChatWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/GroupChatWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/InvitationWindowController$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/InvitationWindowController$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/InvitationWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/InvitationWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/LoginWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/LoginWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/ParentMenuBarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/ParentMenuBarController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/RegistrationWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/RegistrationWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/UpdateWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/UpdateWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/factory/DataFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/factory/DataFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/configFile" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/configFile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/client-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/client-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/client-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/client-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/configFile" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/configFile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/admin/modal/AdminModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/admin/modal/AdminModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/admin/modal/implementation/AdminModelImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/admin/modal/implementation/AdminModelImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/controller/ServerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/controller/ServerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/ServerChatImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/ServerChatImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/ServerClientEnteranceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/ServerClientEnteranceImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/ServerClientInvitationImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/ServerClientInvitationImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/ServerClientRegisterationImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/ServerClientRegisterationImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/ServerClientUpdationImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/ServerClientUpdationImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dal/cfg/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dal/cfg/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/ChatDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/ChatDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/GroupChatDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/GroupChatDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/LoginDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/LoginDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/MessageSetingDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/MessageSetingDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/UserChatDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/UserChatDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/UserContactDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/UserContactDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/UserGroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/UserGroupDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/UserInvitationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/UserInvitationDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/implementation/ChatDaoImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/implementation/ChatDaoImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/implementation/GroupChatDaoImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/implementation/GroupChatDaoImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/implementation/LoginDaoImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/implementation/LoginDaoImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/implementation/MessageSettingDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/implementation/MessageSettingDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/implementation/UserChatDaoImplementaion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/implementation/UserChatDaoImplementaion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/implementation/UserContactDaoImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/implementation/UserContactDaoImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/implementation/UserDaoImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/implementation/UserDaoImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/implementation/UserGroupDaoImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/implementation/UserGroupDaoImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/serverInterfaceImplementation/SereverImpelementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/serverInterfaceImplementation/SereverImpelementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/statistacs/ServerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/statistacs/ServerInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/view/controller/DisplayUsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/view/controller/DisplayUsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/view/controller/RegistrationWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/view/controller/RegistrationWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/test/java/com/iti/server/admin/modal/implementation/AdminModelImplementationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/test/java/com/iti/server/model/dao/MessageSetingDaoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/test/java/com/iti/server/model/dao/implementation/ChatDaoImplementationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/test/java/com/iti/server/model/dao/implementation/LoginDaoImplementationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/test/java/com/iti/server/model/dao/implementation/MessageSettingDaoImpTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/test/java/com/iti/server/model/dao/implementation/UserChatDaoImplementationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/test/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/test/java/com/iti/server/view/validation/implementation/ValidationImplementationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/admin/modal/implementation/AdminModelImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/admin/modal/implementation/AdminModelImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/controller/ServerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/controller/ServerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/controller/ServerSetup.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/controller/ServerSetup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/ServerChatImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/ServerChatImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/ServerClientEnteranceImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/ServerClientEnteranceImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/ServerClientInvitationImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/ServerClientInvitationImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/ServerClientRegisterationImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/ServerClientRegisterationImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/ServerClientUpdationImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/ServerClientUpdationImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dal/cfg/DBConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dal/cfg/DBConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/ChatDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/ChatDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/GroupChatDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/GroupChatDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/LoginDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/LoginDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/MessageSetingDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/MessageSetingDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/UserChatDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/UserChatDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/UserContactDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/UserContactDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/UserGroupDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/UserGroupDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/UserInvitationDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/UserInvitationDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/implementation/ChatDaoImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/implementation/ChatDaoImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/implementation/GroupChatDaoImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/implementation/GroupChatDaoImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/implementation/LoginDaoImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/implementation/LoginDaoImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/implementation/MessageSettingDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/implementation/MessageSettingDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/implementation/UserChatDaoImplementaion.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/implementation/UserChatDaoImplementaion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/implementation/UserContactDaoImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/implementation/UserContactDaoImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/implementation/UserDaoImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/implementation/UserDaoImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/implementation/UserGroupDaoImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/implementation/UserGroupDaoImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/serverInterfaceImplementation/SereverImpelementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/serverInterfaceImplementation/SereverImpelementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/utils/implementation/ServerUtilsImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/utils/implementation/ServerUtilsImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/MainClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/controller/AdvirtisingWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/controller/AdvirtisingWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/controller/CountriesWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/controller/CountriesWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/controller/DisplayUsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/controller/DisplayUsersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/controller/MaleFemaleStatWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/controller/MaleFemaleStatWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/controller/OnlineOfflineWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/controller/OnlineOfflineWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/controller/RegistrationWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/controller/RegistrationWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/factory/DataFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/factory/DataFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/factory/ParentFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/factory/ParentFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/validation/implementation/ValidationImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/validation/implementation/ValidationImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/server-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/server-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/server-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/server-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/surefire-reports/TEST-com.iti.server.model.dao.implementation.ChatDaoImplementationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/surefire-reports/TEST-com.iti.server.model.dao.implementation.ChatDaoImplementationTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/surefire-reports/TEST-com.iti.server.model.dao.implementation.LoginDaoImplementationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/surefire-reports/TEST-com.iti.server.model.dao.implementation.LoginDaoImplementationTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/surefire-reports/TEST-com.iti.server.model.dao.implementation.MessageSettingDaoImpTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/surefire-reports/TEST-com.iti.server.model.dao.implementation.MessageSettingDaoImpTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/surefire-reports/TEST-com.iti.server.model.dao.implementation.UserChatDaoImplementationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/surefire-reports/TEST-com.iti.server.model.dao.implementation.UserChatDaoImplementationTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/surefire-reports/TEST-com.iti.server.model.dao.implementation.UserInvitationDaoImplementationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/surefire-reports/TEST-com.iti.server.model.dao.implementation.UserInvitationDaoImplementationTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/surefire-reports/TEST-com.iti.server.view.validation.implementation.ValidationImplementationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/surefire-reports/TEST-com.iti.server.view.validation.implementation.ValidationImplementationTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/surefire-reports/com.iti.server.model.dao.implementation.ChatDaoImplementationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/surefire-reports/com.iti.server.model.dao.implementation.ChatDaoImplementationTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/surefire-reports/com.iti.server.model.dao.implementation.LoginDaoImplementationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/surefire-reports/com.iti.server.model.dao.implementation.LoginDaoImplementationTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/surefire-reports/com.iti.server.model.dao.implementation.MessageSettingDaoImpTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/surefire-reports/com.iti.server.model.dao.implementation.MessageSettingDaoImpTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/surefire-reports/com.iti.server.model.dao.implementation.UserChatDaoImplementationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/surefire-reports/com.iti.server.model.dao.implementation.UserChatDaoImplementationTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/surefire-reports/com.iti.server.model.dao.implementation.UserInvitationDaoImplementationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/surefire-reports/com.iti.server.model.dao.implementation.UserInvitationDaoImplementationTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/surefire-reports/com.iti.server.view.validation.implementation.ValidationImplementationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/surefire-reports/com.iti.server.view.validation.implementation.ValidationImplementationTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/test-classes/com/iti/server/admin/modal/implementation/AdminModelImplementationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/test-classes/com/iti/server/model/dao/MessageSetingDaoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/test-classes/com/iti/server/model/dao/implementation/ChatDaoImplementationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/test-classes/com/iti/server/model/dao/implementation/LoginDaoImplementationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/test-classes/com/iti/server/model/dao/implementation/MessageSettingDaoImpTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/test-classes/com/iti/server/model/dao/implementation/UserChatDaoImplementationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/test-classes/com/iti/server/model/dao/implementation/UserInvitationDaoImplementationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/test-classes/com/iti/server/view/validation/implementation/ValidationImplementationTest.class" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="31" column="34" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1044">
+              <caret line="58" column="2" selection-start-line="58" selection-start-column="2" selection-end-line="58" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/UserGroupChat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/message/MessageSettings.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/message/EntityMessage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/Chat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/UserContact.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="27" column="21" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/ServerInterfaces/ServerChatInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="56" column="66" selection-start-line="56" selection-start-column="66" selection-end-line="56" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/UserInvitationId.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/UserContactId.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/message/MessageSettings.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/Chat.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/UserGroupChat.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/UserChat.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/UserContact.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/UserContactId.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/UserInvitationId.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/UserInvitation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/message/ReceivedMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/ServerInterfaces/ServerChatInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/User.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ChatCommanServices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ChatCommanServices" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChatCommanServices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ChatCommanServices" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChatCommanServices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ChatCommanServices" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChatCommanServices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ChatCommanServices" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChatCommanServices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ChatCommanServices" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChatCommanServices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ChatCommanServices" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChatCommanServices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ChatCommanServices" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChatCommanServices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ChatCommanServices" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="ServerInterfaces" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChatCommanServices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ChatCommanServices" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551988823613" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../JavaScript/Lab 2" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Study\iti\project\java chat\ChatCommanServices\src\main\java\com\iti\ChatCommanServices\model\entity\chat" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.iti.ChatCommanServices.model.entity.user" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Study\iti\project\java chat\ChatCommanServices\src\main" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="467df553-61bc-46ef-ad22-2848225d8661" name="Default Changelist" comment="" />
+      <created>1551978404065</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1551978404065</updated>
+      <workItem from="1551978411313" duration="6271000" />
+      <workItem from="1552286805027" duration="10634000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="16905000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/chating/behaviour/VoiceChattingBehaviour.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/UserChat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="33" selection-start-column="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/UserInvitation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162">
+          <caret column="32" selection-start-column="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/message/ReceivedMessage.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/EntityLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/UserGroupChatId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/UserGroupChat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/message/MessageSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/message/EntityMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/Chat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/UserInvitationId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/ServerInterfaces/ServerChatInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="56" column="66" selection-start-line="56" selection-start-column="66" selection-end-line="56" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1044">
+          <caret line="58" column="2" selection-start-line="58" selection-start-column="2" selection-end-line="58" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/UserContact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="31" column="34" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/UserContactId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8.0_20</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

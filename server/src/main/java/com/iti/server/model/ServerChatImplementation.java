@@ -15,6 +15,8 @@ import com.iti.server.model.dao.*;
 import com.iti.server.model.dao.implementation.*;
 import com.iti.server.model.utils.ServerUtils;
 import com.iti.server.model.utils.implementation.ServerUtilsImplementation;
+import org.hibernate.Session;
+
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
@@ -27,6 +29,7 @@ import java.util.HashMap;
 public class ServerChatImplementation extends UnicastRemoteObject implements ServerChatInterface {
 
     public static HashMap<String, ClientServiceInterface> clients;
+    public static HashMap<String, Session > clientSession;
     LoginDao loginDao;
     DBConnection dbConnection;
 
@@ -36,6 +39,8 @@ public class ServerChatImplementation extends UnicastRemoteObject implements Ser
         this.dbConnection=dbConnection;
         clients=new HashMap<>();
         utils=new ServerUtilsImplementation();
+        clientSession=new HashMap<>();
+
     }
 
     /**
@@ -45,6 +50,8 @@ public class ServerChatImplementation extends UnicastRemoteObject implements Ser
     @Override
     public void registerClient(String clientID, ClientServiceInterface client) throws RemoteException {
         clients.put(clientID,client);
+        Session session=dbConnection.getConnection().openSession();
+        clientSession.put(clientID,session);
     }
 
 
@@ -52,13 +59,13 @@ public class ServerChatImplementation extends UnicastRemoteObject implements Ser
     @Override
     public void createChatGroup(ArrayList<User> mamber) throws RemoteException {
         UserGroupDao userGroupDao=new UserGroupDaoImplementation(dbConnection);
-        userGroupDao.persistent(mamber);
+        userGroupDao.persistent(mamber,clientSession.get(mamber.get(0).getPhno()));
     }
 
      @Override
     public void sendMessage(EntityMessage message,String reciverID) throws RemoteException {
         ChatDao chatDao=new ChatDaoImplementation(dbConnection);
-        chatDao.persistent(message);
+        chatDao.persistent(message,clientSession.get(message.getSenderUser().getPhno()));
         utils.SendToFriend(message,reciverID,clients);
 
     }
@@ -66,27 +73,27 @@ public class ServerChatImplementation extends UnicastRemoteObject implements Ser
      @Override
     public String startChating(User firstUser, User secondUser) throws RemoteException {
         UserChatDao userChatDao=new UserChatDaoImplementaion();
-        String chatID = userChatDao.retrieveChatID(firstUser,secondUser,dbConnection.getConnection());
+        String chatID = userChatDao.retrieveChatID(firstUser,secondUser,clientSession.get(firstUser.getPhno()));
         return chatID;
     }
 
 
     @Override
-    public void updatSeenFriends(String string) {
+    public void updatSeenFriends(String userPhoneNumber) {
         UserInvitationDao userInvtationCountDao = new UserInvitationDaoImplementation(dbConnection);
-        userInvtationCountDao.updatSeenFriends(string);
+        userInvtationCountDao.updatSeenFriends(userPhoneNumber,clientSession.get(userPhoneNumber));
     }
 
     @Override
     public ArrayList<String> getChatHistory(User user) {
         UserChatDao userChatDao =new UserChatDaoImplementaion();
-        return userChatDao.retrieveChatsID(user,dbConnection.getConnection());
+        return userChatDao.retrieveChatsID(user,clientSession.get(user.getPhno()));
     }
 
     @Override
-    public ArrayList<EntityMessage> getMessages(String chatID) {
+    public ArrayList<EntityMessage> getMessages(String chatID,User user) {
         ChatDao chatDao=new ChatDaoImplementation(dbConnection);
-        return chatDao.reterive(chatID,dbConnection.getConnection());
+        return chatDao.reterive(chatID,clientSession.get(user.getPhno()));
     }
 
     @Override
@@ -109,7 +116,7 @@ public class ServerChatImplementation extends UnicastRemoteObject implements Ser
     @Override
     public ArrayList<String> getGroupHistory(User user) throws RemoteException {
         UserGroupDao userGroupDao=new UserGroupDaoImplementation(dbConnection);
-        return userGroupDao.reteriveGroups(user);
+        return userGroupDao.reteriveGroups(user,clientSession.get(user.getPhno()));
     }
 
     @Override
@@ -117,22 +124,22 @@ public class ServerChatImplementation extends UnicastRemoteObject implements Ser
         UserGroupDao userGroupDao=new UserGroupDaoImplementation(dbConnection);
         GroupChatDao groupChatDao=new GroupChatDaoImplementation(dbConnection);
         ServerUtils utils=new ServerUtilsImplementation();
-        ArrayList<User> users= userGroupDao.reteriveGroupMember(entityMessage.getSenderUser(),groupID);
-        groupChatDao.persistent(entityMessage);
+        ArrayList<User> users= userGroupDao.reteriveGroupMember(entityMessage.getSenderUser(),groupID,clientSession.get(entityMessage.getSenderUser().getPhno()));
+        groupChatDao.persistent(entityMessage,clientSession.get(entityMessage.getSenderUser().getPhno()));
         utils.broadCastToGroup(entityMessage,users,clients,groupID);
 
     }
 
     @Override
-    public ArrayList<EntityMessage> getGroupMessages(String s) throws RemoteException {
+    public ArrayList<EntityMessage> getGroupMessages(String s,User user) throws RemoteException {
         GroupChatDao groupChatDao=new GroupChatDaoImplementation(dbConnection);
-        return groupChatDao.reterive(s,dbConnection.getConnection());
+        return groupChatDao.reterive(s,clientSession.get(user.getPhno()));
     }
 
     @Override
-    public String validateStyle(MessageSettings messageSettings) throws RemoteException {
+    public String validateStyle(MessageSettings messageSettings,User user) throws RemoteException {
         MessageSetingDao messageSetingDao=new MessageSettingDaoImp(dbConnection);
-        return messageSetingDao.compareStyle(messageSettings);
+        return messageSetingDao.compareStyle(messageSettings,clientSession.get(user.getPhno()));
     }
 
 }

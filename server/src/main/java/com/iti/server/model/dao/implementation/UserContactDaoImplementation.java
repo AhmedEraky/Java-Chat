@@ -6,12 +6,16 @@ import com.iti.ChatCommanServices.model.entity.user.UserContact;
 
 import com.iti.server.model.dal.cfg.DBConnection;
 import com.iti.server.model.dao.UserContactDao;
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.criterion.Restrictions;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -21,7 +25,39 @@ public class UserContactDaoImplementation implements UserContactDao {
     public UserContactDaoImplementation(DBConnection dbConnection) {
         this.dbConnection = dbConnection;
     }
+
     @Override
+    public void persistent(UserContact userContact, Session session) {
+
+    }
+
+    @Override
+    public void delete(UserContact userContact, Session session) {
+
+    }
+
+    @Override
+    public void update(UserContact userContact, Session session) {
+
+    }
+
+    @Override
+    public ArrayList<User> reterive(String userPhoneNumber, Session session) {
+        Criteria criteria=session.createCriteria(User.class).add(Restrictions.eq("userPhoneNumber",userPhoneNumber));
+        User user= (User) criteria.uniqueResult();
+        ArrayList<User> users=new ArrayList();
+        for(UserContact userContact:user.getUserContacts()){
+            Criteria criteria1=session.createCriteria(User.class).add(Restrictions.eq("userPhoneNumber",userContact.getId().getContact()));
+            users.add((User) criteria1.uniqueResult());
+        }
+        return users;
+    }
+
+    @Override
+    public ArrayList<User> reteriveOnlineFriends(String phno, Session session) {
+        return null;
+    }
+   /* @Override
     public void persistent(UserContact userContact) {
          String query = " INSERT INTO user_contact (phone_number,contact) VALUES (?, ?)";
        
@@ -116,7 +152,7 @@ public class UserContactDaoImplementation implements UserContactDao {
             ex.printStackTrace();
         }
         return userContacts;
-    }
+    }*/
 }
 
 

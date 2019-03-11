@@ -18,6 +18,8 @@ import com.iti.server.model.dao.implementation.LoginDaoImplementation;
 import com.iti.server.model.dao.implementation.UserDaoImplementation;
 import com.iti.server.model.utils.ServerUtils;
 import com.iti.server.model.utils.implementation.ServerUtilsImplementation;
+import org.hibernate.Session;
+
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.HashMap;
@@ -29,6 +31,7 @@ import java.util.HashMap;
 public class ServerClientEnteranceImplementation extends UnicastRemoteObject implements ServerClientEnteranceInterface {
 
     public static HashMap<String, ClientServiceInterface> clients;
+    public static HashMap<String, Session> clientSession;
 
     LoginDao loginDao;
     DBConnection dbConnection;
@@ -37,13 +40,13 @@ public class ServerClientEnteranceImplementation extends UnicastRemoteObject imp
     public ServerClientEnteranceImplementation(DBConnection dbConnection) throws RemoteException {
         this.dbConnection=dbConnection;
         clients=new HashMap<>();
-
+        clientSession=new HashMap<>();
         utils=new ServerUtilsImplementation();
     }
- @Override
+    @Override
     public void registration(User user) throws RemoteException, RegistrationDuplicateException {
         UserDao userDao=new UserDaoImplementation(dbConnection);
-        userDao.persistent(user);
+        userDao.persistent(user,clientSession.get(user.getPhno()));
 
     }
 
@@ -54,19 +57,29 @@ public class ServerClientEnteranceImplementation extends UnicastRemoteObject imp
     @Override
     public void registerClient(String clientID, ClientServiceInterface client) throws RemoteException {
         clients.put(clientID,client);
+        Session session=dbConnection.getConnection().openSession();
+        clientSession.put(clientID,session);
     }
     @Override
     public void login(EntityLogin entityLogin) throws LoginFaieldException  {
 
         LoginDao loginDao=new LoginDaoImplementation(dbConnection);
         try {
-            loginDao.reterive(entityLogin,clients);
-            UserDao userDao=new UserDaoImplementation(dbConnection);
-            userDao.updateStatus("onlineAvailable",entityLogin.getPhno());
-
+            if(clientSession.containsValue(entityLogin.getPhno())){
+                loginDao.reterive(entityLogin,clients,clientSession.get(entityLogin.getPhno()));
+                UserDao userDao=new UserDaoImplementation(dbConnection);
+                userDao.updateStatus("onlineAvailable",entityLogin.getPhno(),clientSession.get(entityLogin.getPhno()));
+            }else
+            {
+                Session session=dbConnection.getConnection().openSession();
+                loginDao.reterive(entityLogin,clients,session);
+                UserDao userDao=new UserDaoImplementation(dbConnection);
+                userDao.updateStatus("onlineAvailable",entityLogin.getPhno(),session);
+                session.close();
+            }
 
         } catch (LoginFaieldException e) {
-            throw new LoginFaieldException("Login Faild");
+            throw new LoginFaieldException("Login Failed");
         }
 
     }
@@ -74,14 +87,14 @@ public class ServerClientEnteranceImplementation extends UnicastRemoteObject imp
     @Override
     public void changePasswordByNewClient(EntityLogin entityLogin, String newPassword) throws RemoteException {
         LoginDao loginDao = new LoginDaoImplementation(dbConnection);
-        loginDao.changePasswordByNewClient(entityLogin, newPassword);
+        loginDao.changePasswordByNewClient(entityLogin, newPassword,clientSession.get(entityLogin.getPhno()));
     }
 
 
     @Override
     public void samePasswordByNewClient(EntityLogin entityLogin) throws RemoteException {
         LoginDao loginDao = new LoginDaoImplementation(dbConnection);
-        loginDao.samePasswordByNewClient(entityLogin);
+        loginDao.samePasswordByNewClient(entityLogin,clientSession.get(entityLogin.getPhno()));
     }
 
 

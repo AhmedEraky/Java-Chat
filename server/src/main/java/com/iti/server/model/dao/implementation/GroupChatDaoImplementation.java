@@ -6,6 +6,7 @@ import com.iti.ChatCommanServices.model.entity.user.User;
 import com.iti.server.model.dal.cfg.DBConnection;
 import com.iti.server.model.dao.GroupChatDao;
 import com.iti.server.model.dao.UserDao;
+import org.hibernate.Session;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -18,6 +19,16 @@ public class GroupChatDaoImplementation implements GroupChatDao {
     }
 
     @Override
+    public void persistent(EntityMessage message, Session session) {
+
+    }
+
+    @Override
+    public ArrayList<EntityMessage> reterive(String chatID, Session session) {
+        return null;
+    }
+
+   /* @Override
     public synchronized void  persistent(EntityMessage message) {
         String insertQuery="INSERT INTO groupchat (sender_phone_number,file_time_stamp,file_path,message_content,message_time_stamp,chat_id_group_message,message_settings_for_message)VALUES(?,(Select NOW()),'',?,(Select NOW()),?,?)";
         try {
@@ -91,5 +102,5 @@ public class GroupChatDaoImplementation implements GroupChatDao {
         return messages;
     }
 
-
+*/
 }

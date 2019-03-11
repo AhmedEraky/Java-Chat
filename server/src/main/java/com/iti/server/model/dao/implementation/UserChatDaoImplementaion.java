@@ -3,6 +3,7 @@ package com.iti.server.model.dao.implementation;
 import com.iti.ChatCommanServices.model.entity.user.User;
 import com.iti.server.model.dal.cfg.DBConnection;
 import com.iti.server.model.dao.UserChatDao;
+import org.hibernate.Session;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -10,8 +11,17 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class UserChatDaoImplementaion implements UserChatDao {
+    @Override
+    public String retrieveChatID(User firstUser, User secondUser, Session session) {
+        return null;
+    }
 
     @Override
+    public ArrayList<String> retrieveChatsID(User user, Session session) {
+        return null;
+    }
+
+   /* @Override
     public String retrieveChatID(User firstUser, User secondUser, Connection connection) {
         String query="SELECT * FROM user_chat where (first_phone_number= '"+firstUser.getPhno()+"' and second_phone_number= '"+secondUser.getPhno()+"' ) ||(first_phone_number= '"+secondUser.getPhno()+"' and second_phone_number= '"+firstUser.getPhno()+"')";
         String chatId=null;
@@ -52,5 +62,5 @@ public class UserChatDaoImplementaion implements UserChatDao {
             e.printStackTrace();
         }
         return chatList;
-    }
+    }*/
 }

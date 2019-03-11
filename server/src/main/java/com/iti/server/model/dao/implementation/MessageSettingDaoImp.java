@@ -3,6 +3,7 @@ package com.iti.server.model.dao.implementation;
 import com.iti.ChatCommanServices.model.entity.message.MessageSettings;
 import com.iti.server.model.dal.cfg.DBConnection;
 import com.iti.server.model.dao.MessageSetingDao;
+import org.hibernate.Session;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -17,6 +18,11 @@ public class MessageSettingDaoImp  implements MessageSetingDao {
     }
 
     @Override
+    public String compareStyle(MessageSettings settings, Session session) {
+        return null;
+    }
+
+/*    @Override
     public String compareStyle(MessageSettings settings) {
         String query="select * from message_settings where font_size=? and font_style=? and color = ? and\n" +
                 "bold=? and italic=? and underline=? and text_background =?";
@@ -104,5 +110,5 @@ public class MessageSettingDaoImp  implements MessageSetingDao {
             e.printStackTrace();
         }
         return id;
-    }
+    }*/
 }

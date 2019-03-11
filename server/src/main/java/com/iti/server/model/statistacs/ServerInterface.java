@@ -3,7 +3,7 @@
 * To change this template file, choose Tools | Templates
 * and open the template in the editor.
 */
-package com.iti.server.model.serverInterface;
+package com.iti.server.model.statistacs;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;

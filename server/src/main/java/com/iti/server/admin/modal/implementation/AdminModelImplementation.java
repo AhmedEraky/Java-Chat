@@ -10,6 +10,8 @@ import com.iti.ChatCommanServices.model.exception.RegistrationDuplicateException
 import com.iti.server.admin.modal.AdminModel;
 import com.iti.server.model.dal.cfg.DBConnection;
 import com.iti.server.model.dao.implementation.UserDaoImplementation;
+import org.hibernate.Session;
+
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -24,12 +26,34 @@ import java.util.logging.Logger;
 public class AdminModelImplementation implements AdminModel {
 
     DBConnection dBConnection = new DBConnection();
+    public static Session session;
 
     public AdminModelImplementation() {
         dBConnection.ConnectToDB();
+        session=dBConnection.getConnection().openSession();
     }
 
     @Override
+    public void addClientByAdmin(User user) throws RegistrationDuplicateException {
+
+    }
+
+    @Override
+    public ArrayList<User> displayUsers() {
+        return null;
+    }
+
+    @Override
+    public void updateUser(User user) throws RegistrationDuplicateException {
+
+    }
+
+    @Override
+    public void deleteUser(String phoneNumber) {
+
+    }
+
+   /* @Override
     public void addClientByAdmin(User user) throws RegistrationDuplicateException {
 
         String query = " INSERT INTO user (phone_number, first_name, lastName, email,image, password,status, country, gender, date_birth, bio, admin_flag) VALUES (?, ?, ?, ?, ?, ?, ?,?, ?, ?, ?,?)";
@@ -148,5 +172,5 @@ public class AdminModelImplementation implements AdminModel {
                 }
             }
         }
-    }
+    }*/
 }
