@@ -8,9 +8,7 @@ package com.iti.server.model;
 import com.iti.ChatCommanServices.model.ClientInterfaces.ClientServiceInterface;
 import com.iti.ChatCommanServices.model.ServerInterfaces.ServerClientInvitationInterface;
 import com.iti.ChatCommanServices.model.ServerInterfaces.ServerClientUpdationInterface;
-import com.iti.ChatCommanServices.model.entity.user.User;
-import com.iti.ChatCommanServices.model.entity.user.UserContact;
-import com.iti.ChatCommanServices.model.entity.user.UserInvitation;
+import com.iti.ChatCommanServices.model.entity.user.*;
 import com.iti.server.model.dal.cfg.DBConnection;
 import com.iti.server.model.dao.LoginDao;
 import com.iti.server.model.dao.UserContactDao;
@@ -84,60 +82,88 @@ public class ServerClientInvitationImplementation extends UnicastRemoteObject im
         userInvitationDao.deleteFromReceiver(userInvitation,ServerClientEnteranceImplementation.clientSession.get(userInvitation.getUser().getPhno()));
     }
 
-
-
     @Override
-    public void addContact(ArrayList<UserContact> userContacts) throws RemoteException {
+    public void addContact(ArrayList<UserContactId> userContactIds) throws RemoteException {
         // check that userPhoneNumber  exists in userTable
         /*
         put them atributes
          */
-       /* int invitationAccepted = 0;//accepteInvitation
+        int invitationAccepted = 0;//accepteInvitation
         int emailReceived = 0;//sendEmail
         int invitationReceived = 0;//receivedInvitation
         UserDao userDao = new UserDaoImplementation(dbConnection);
         UserContactDao userContactDao = new UserContactDaoImplementation(dbConnection);
         UserInvitationDao userInvitationDao = new UserInvitationDaoImplementation(dbConnection);
         UserInvitation userInvitation = new UserInvitation();
-
-        for(UserContact userContact:userContacts ) {
-            boolean check = userDao.checkUserExist(userContact.getContactPhno());
+        UserInvitationId userInvitationId = new UserInvitationId();
+        for(UserContactId userContactId:userContactIds ) {
+            boolean check = userDao.checkUserExist(userContactId.getContact(),ServerClientEnteranceImplementation.clientSession.get(userContactId.getPhoneNumber()));
             //if exist call dao method to add this phone number to user_contact
             if (check) {
-                boolean checkInvitation = userInvitationDao.CheckInvitationExist(userContact);
-                userInvitation.setSenderPhno(userContact.getPhno());
-                userInvitation.setReceiverPhno(userContact.getContactPhno());
+                boolean checkInvitation = userInvitationDao.CheckInvitationExist(userContactId, ServerClientEnteranceImplementation.clientSession.get(userContactId.getPhoneNumber()));
+                userInvitationId.setSenderPhoneNumber(userContactId.getPhoneNumber());
+                // userInvitationId.setSenderPhoneNumber(userContactId.getContact());
+                userInvitationId.setReceiverPhoneNumber(userContactId.getContact());
+                User userr=userDao.reterive(userContactId.getPhoneNumber(), ServerClientEnteranceImplementation.clientSession.get(userContactId.getPhoneNumber()));
+                userInvitation.setUser(userr);
+                userInvitation.setId(userInvitationId);
+                // userInvitation.setReceiverPhno(userContact.getContactPhno());
                 if (checkInvitation) {
                     //delete from user_invitation
-                    userInvitationDao.deleteFromReceiver(userInvitation);
+                    userInvitationDao.deleteFromReceiver(userInvitation, ServerClientEnteranceImplementation.clientSession.get(userContactId.getPhoneNumber()));
                     //add user_contact
+                    UserContact userContact = new UserContact();
+                    //persist user
+                    User userinst=userDao.reterive(userContactId.getPhoneNumber(), ServerClientEnteranceImplementation.clientSession.get(userContactId.getPhoneNumber()));
+
+                    userContact.setUser(userinst);
+                    userContact.setId(userContactId);
+                    userContactDao.persistent(userContact, ServerClientEnteranceImplementation.clientSession.get(userContactId.getPhoneNumber()));
+
+                    //retrieve friend
+
                     UserContact userContactFriend = new UserContact();
-                    userContactFriend.setPhno(userContact.getContactPhno());
-                    userContactFriend.setContactPhno(userContact.getPhno());
-                    userContactDao.persistent(userContact); /// to other user
-                    userContactDao.persistent(userContactFriend);
+                    UserContactId userContactfriendId=new UserContactId();
+                    userContactfriendId.setPhoneNumber(userContactId.getContact());
+                    userContactfriendId.setContact(userContactId.getPhoneNumber());
+                    //retrieve user
+                    User friend=userDao.reterive(userContactId.getContact(), ServerClientEnteranceImplementation.clientSession.get(userContactId.getPhoneNumber()));
+
+                    ////////////////
+                    userContactFriend.setUser(friend);
+                    userContactFriend.setId(userContactfriendId);
+                    userContactDao.persistent(userContactFriend, ServerClientEnteranceImplementation.clientSession.get(userContactId.getPhoneNumber()));
+
                     invitationAccepted++;
-                } else {
+                }
+                else {
                     //add in user_invitation
                     userInvitation.setIgnoreFlag(false);
-                    userInvitationDao.persistent(userInvitation);
+                    userInvitationDao.persistent(userInvitation, ServerClientEnteranceImplementation.clientSession.get(userContactId.getPhoneNumber()));
                     invitationReceived++;
-                    User sender=userDao.reterive(userContact.getPhno());
-                    //get user 
+                    User sender=userDao.reterive(userContactId.getPhoneNumber(), ServerClientEnteranceImplementation.clientSession.get(userContactId.getPhoneNumber()));
+
+                    //get user
                     ServerClientUpdationInterface serverClientUpdationInterface=new ServerClientUpdationImplementation(dbConnection);
-                    User user =userDao.reterive(userContact.getContactPhno());
-                    if(!user.getStatus().equals("offline"))
-                        clients.get(userContact.getContactPhno()).reciveNewFriendRequst(sender);
+                    User receiver=userDao.reterive(userContactId.getContact(), ServerClientEnteranceImplementation.clientSession.get(userContactId.getPhoneNumber()));
+
+                    if(!receiver.getStatus().equals("offline"))
+                        clients.get(userContactId.getContact()).reciveNewFriendRequst(sender);
                 }
+
             }
             else{
                 emailReceived++;
             }
+
         }
         ServerUtils utils=new ServerUtilsImplementation();
-        User sender=userDao.reterive(userContacts.get(0).getPhno());
+        User sender=userDao.reterive(userContactIds.get(0).getPhoneNumber(),ServerClientEnteranceImplementation.clientSession.get(userContactIds.get(0).getPhoneNumber()));
         utils.addFriendsResult(invitationAccepted, invitationReceived, emailReceived,sender, clients);
-   */ }
+
+    }
+
+
 
     @Override
     public ArrayList<User> getInvitations(String userphoneNumber) throws RemoteException {

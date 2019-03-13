@@ -2,12 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="467df553-61bc-46ef-ad22-2848225d8661" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/ServerInterfaces/ServerClientInvitationInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/ServerInterfaces/ServerClientInvitationInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ChatCommanServices-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/ChatCommanServices-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/ChatCommanServices/model/ServerInterfaces/ServerClientInvitationInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/ChatCommanServices/model/ServerInterfaces/ServerClientInvitationInterface.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/configFile" beforeDir="false" afterPath="$PROJECT_DIR$/../client/configFile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/main/java/com/iti/client/view/controller/AddFriendWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main/java/com/iti/client/view/controller/AddFriendWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/main/java/com/iti/client/view/controller/ChatWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main/java/com/iti/client/view/controller/ChatWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/AddFriendWindowController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/AddFriendWindowController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/AddFriendWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/AddFriendWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/ChatWindowController$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/ChatWindowController$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/ChatWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/ChatWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/factory/DataFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/factory/DataFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/client-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/client-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/ServerChatImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/ServerChatImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/ServerClientEnteranceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/ServerClientEnteranceImplementation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/ServerClientInvitationImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/ServerClientInvitationImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/ServerClientRegisterationImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/ServerClientRegisterationImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/ServerClientUpdationImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/ServerClientUpdationImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/UserInvitationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/UserInvitationDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/implementation/UserDaoImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/implementation/UserDaoImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/admin/modal/implementation/AdminModelImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/admin/modal/implementation/AdminModelImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/controller/ServerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/controller/ServerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/controller/ServerSetup.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/controller/ServerSetup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/ServerChatImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/ServerChatImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/ServerClientEnteranceImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/ServerClientEnteranceImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/ServerClientInvitationImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/ServerClientInvitationImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/ServerClientRegisterationImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/ServerClientRegisterationImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/ServerClientUpdationImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/ServerClientUpdationImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/UserInvitationDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/UserInvitationDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/implementation/ChatDaoImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/implementation/ChatDaoImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/implementation/LoginDaoImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/implementation/LoginDaoImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/implementation/UserContactDaoImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/implementation/UserContactDaoImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/implementation/UserDaoImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/implementation/UserDaoImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/utils/implementation/ServerUtilsImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/model/utils/implementation/ServerUtilsImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/MainClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/controller/AdvirtisingWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/controller/AdvirtisingWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/controller/CountriesWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/controller/CountriesWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/controller/DisplayUsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/controller/DisplayUsersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/controller/MaleFemaleStatWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/controller/MaleFemaleStatWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/controller/OnlineOfflineWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/controller/OnlineOfflineWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/controller/RegistrationWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/controller/RegistrationWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/factory/DataFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/factory/DataFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/factory/ParentFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/factory/ParentFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/validation/implementation/ValidationImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/com/iti/server/view/validation/implementation/ValidationImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/server-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/server-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,7 +62,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
+            <state relative-caret-position="864">
               <caret line="48" column="27" lean-forward="true" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -30,11 +71,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/UserContact.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/UserGroupChat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="27" column="21" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="21" />
+            <state relative-caret-position="216">
+              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/EntityLogin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -42,7 +95,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/UserGroupChatId.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="198">
               <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -54,7 +107,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/message/MessageSettings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
+            <state relative-caret-position="90">
               <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -66,18 +119,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/UserInvitation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/dto/message/MessageSettings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1422">
+            <state relative-caret-position="1530">
               <caret line="102" column="26" selection-start-line="102" selection-start-column="26" selection-end-line="102" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -89,7 +133,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/Chat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
+            <state relative-caret-position="20">
               <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -98,10 +142,19 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/ServerInterfaces/ServerClientInvitationInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="39" column="50" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/UserChat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
+            <state relative-caret-position="164">
               <caret line="25" column="26" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -111,18 +164,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/UserInvitationId.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/message/EntityMessage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
+            <state relative-caret-position="198">
               <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -166,6 +210,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/message/EntityMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/dto/message/MessageSettings.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/ServerInterfaces/ServerClientInvitationInterface.java" />
       </list>
     </option>
   </component>
@@ -257,28 +302,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ChatCommanServices" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ChatCommanServices" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-              <item name="message" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ChatCommanServices" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ChatCommanServices" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="ServerInterfaces" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ChatCommanServices" type="b2602c69:ProjectViewProjectNode" />
@@ -296,7 +320,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552487836495" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552498731502" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../JavaScript/Lab 2" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -338,18 +362,17 @@
       <workItem from="1552286805027" duration="10634000" />
       <workItem from="1552415963144" duration="7975000" />
       <workItem from="1552465716657" duration="6082000" />
-      <workItem from="1552483923773" duration="2141000" />
+      <workItem from="1552483923773" duration="6917000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33103000" />
+    <option name="totallyTimeSpent" value="37879000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -366,7 +389,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -399,103 +422,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/UserContactId.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="53" column="87" selection-start-line="53" selection-start-column="87" selection-end-line="53" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/EntityLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="48" column="27" lean-forward="true" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/UserGroupChat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/UserGroupChatId.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/message/MessageSettings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#937#938#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/UserInvitation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/dto/message/MessageSettings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1422">
-          <caret line="102" column="26" selection-start-line="102" selection-start-column="26" selection-end-line="102" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/Chat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/UserChat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="25" column="26" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -506,13 +436,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/message/EntityMessage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/UserInvitation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="594">
+          <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/UserContactId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
@@ -520,6 +454,102 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="27" column="21" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="48" column="27" lean-forward="true" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/user/EntityLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/message/MessageSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/message/EntityMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/dto/message/MessageSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="102" column="26" selection-start-line="102" selection-start-column="26" selection-end-line="102" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/UserGroupChatId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/UserGroupChat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/UserChat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/entity/chat/Chat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/ChatCommanServices/model/ServerInterfaces/ServerClientInvitationInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="39" column="50" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
         </state>
       </provider>
     </entry>

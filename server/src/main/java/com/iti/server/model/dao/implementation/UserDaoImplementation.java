@@ -28,6 +28,7 @@ public class UserDaoImplementation implements UserDao {
 
     @Override
     public void persistent(User user, Session session) throws RegistrationDuplicateException {
+        session.beginTransaction();
 
     }
 
@@ -50,9 +51,13 @@ public class UserDaoImplementation implements UserDao {
 
     @Override
     public boolean checkUserExist(String userPhoneNumber, Session session) {
-        return false;
+        boolean check=false;
+        Criteria criteria=session.createCriteria(User.class).add(Restrictions.eq("userPhoneNumber",userPhoneNumber));
+        User user= (User) criteria.uniqueResult();
+        if(user != null)
+            check=true;
+        return check;
     }
-
     @Override
     public ArrayList<User> reteriveOnlineUsers() {
         return null;

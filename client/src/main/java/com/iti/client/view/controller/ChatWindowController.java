@@ -194,7 +194,6 @@ public class ChatWindowController extends ParentMenuBarController {
                                 Label labelNewMessage = new Label();
                                 labelNewMessage.setText(message.getMessage());
                                 labelNewMessage.setAlignment(Pos.CENTER);
-
                                 labelNewMessage.setStyle("-fx-font-family:"+message.getMessageSettings().getFontStyle());
                                 labelNewMessage.setStyle(labelNewMessage.getStyle()+"; -fx-font-size: "+message.getMessageSettings().getFontSize());
                                 labelNewMessage.setStyle(labelNewMessage.getStyle()+"; -fx-text-fill: "+message.getMessageSettings().getFontColor());
@@ -209,8 +208,12 @@ public class ChatWindowController extends ParentMenuBarController {
                                 senderImage.setFitHeight(20);
                                 hBox.getChildren().add(labelNewMessage);
                                 hBox.getChildren().add(senderImage);
-                                setGraphic(hBox);
-                            }else
+
+                                Platform.runLater(() -> {
+                                    setGraphic(hBox);
+                                });
+                            }
+                            else
                             {
                                 HBox hBox = new HBox();
                                 hBox.setAlignment(Pos.BASELINE_LEFT);
@@ -233,16 +236,21 @@ public class ChatWindowController extends ParentMenuBarController {
                                 senderImage.setFitHeight(20);
                                 hBox.getChildren().add(senderImage);
                                 hBox.getChildren().add(labelNewMessage);
-
                                 Platform.runLater(() -> {
                                     setGraphic(hBox);
                                 });
+
                             }
                         }
                     }
                 };
             }
         });
+
+
+
+
+
         friendsList.setOnMouseClicked(this::startChatingWith);
         ObservableList<String> fontsObservableList = FXCollections.observableArrayList();
         fontsObservableList.addAll("Consolas","Ebrima","Bauhaus 93");
@@ -363,7 +371,6 @@ public class ChatWindowController extends ParentMenuBarController {
         try {
             chatID= mainClass.getServerServiceLocator().getChatService().startChating(mainClass.getUser(),otherContact);
             if(!chatSession.containsValue(chatID)){
-
                 ObservableList<EntityMessage> messages=FXCollections.observableArrayList();
                 messages.addAll(mainClass.getServerServiceLocator().getChatService().getMessages(chatID,mainClass.getUser()));
                 chatSession.put(chatID,messages);
@@ -411,7 +418,6 @@ public class ChatWindowController extends ParentMenuBarController {
 
     public void addNewMessage(EntityMessage message){
         message.setMessage(message.getMessage().trim());
-
         if(!chatID.equals("")&&chatID.equals(message.getId())) {
             chatSession.get(chatID).add(message);
             if(chatBotFlag){

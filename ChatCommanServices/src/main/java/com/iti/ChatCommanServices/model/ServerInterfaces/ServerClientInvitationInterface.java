@@ -8,6 +8,7 @@ package com.iti.ChatCommanServices.model.ServerInterfaces;
 import com.iti.ChatCommanServices.model.ClientInterfaces.ClientServiceInterface;
 import com.iti.ChatCommanServices.model.entity.user.User;
 import com.iti.ChatCommanServices.model.entity.user.UserContact;
+import com.iti.ChatCommanServices.model.entity.user.UserContactId;
 import com.iti.ChatCommanServices.model.entity.user.UserInvitation;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
@@ -36,7 +37,7 @@ public interface ServerClientInvitationInterface extends Remote{
      *  (in view control to handle add button),each loop will call this method
      * @param userContact
      */
-    public void addContact(ArrayList<UserContact> userContact) throws RemoteException;
+    public void addContact(ArrayList<UserContactId> userContact) throws RemoteException;
     
     public ArrayList<User> getInvitations(String UserphoneNumber) throws RemoteException;
 

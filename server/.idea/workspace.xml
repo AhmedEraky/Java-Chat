@@ -3,11 +3,52 @@
   <component name="ChangeListManager">
     <list default="true" id="b0933559-59cd-4242-8add-18c770e96490" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../ChatCommanServices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatCommanServices/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatCommanServices/src/main/java/com/iti/ChatCommanServices/model/ServerInterfaces/ServerClientInvitationInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatCommanServices/src/main/java/com/iti/ChatCommanServices/model/ServerInterfaces/ServerClientInvitationInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatCommanServices/target/ChatCommanServices-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatCommanServices/target/ChatCommanServices-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatCommanServices/target/classes/com/iti/ChatCommanServices/model/ServerInterfaces/ServerClientInvitationInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatCommanServices/target/classes/com/iti/ChatCommanServices/model/ServerInterfaces/ServerClientInvitationInterface.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerChatImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerChatImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/configFile" beforeDir="false" afterPath="$PROJECT_DIR$/../client/configFile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/main/java/com/iti/client/view/controller/AddFriendWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main/java/com/iti/client/view/controller/AddFriendWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/main/java/com/iti/client/view/controller/ChatWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main/java/com/iti/client/view/controller/ChatWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/AddFriendWindowController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/AddFriendWindowController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/AddFriendWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/AddFriendWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/ChatWindowController$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/ChatWindowController$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/ChatWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/controller/ChatWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/factory/DataFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/com/iti/client/view/factory/DataFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/client-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/client-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientEnteranceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientEnteranceImplementation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientInvitationImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientInvitationImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientRegisterationImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientRegisterationImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientUpdationImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientUpdationImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/UserInvitationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/UserInvitationDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserDaoImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserDaoImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/server/admin/modal/implementation/AdminModelImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/server/admin/modal/implementation/AdminModelImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/server/controller/ServerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/server/controller/ServerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/server/controller/ServerSetup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/server/controller/ServerSetup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/server/model/ServerChatImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/server/model/ServerChatImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/server/model/ServerClientEnteranceImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/server/model/ServerClientEnteranceImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/server/model/ServerClientInvitationImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/server/model/ServerClientInvitationImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/server/model/ServerClientRegisterationImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/server/model/ServerClientRegisterationImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/server/model/ServerClientUpdationImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/server/model/ServerClientUpdationImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/server/model/dao/UserInvitationDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/server/model/dao/UserInvitationDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/server/model/dao/implementation/ChatDaoImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/server/model/dao/implementation/ChatDaoImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/server/model/dao/implementation/LoginDaoImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/server/model/dao/implementation/LoginDaoImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/server/model/dao/implementation/UserContactDaoImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/server/model/dao/implementation/UserContactDaoImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/server/model/dao/implementation/UserDaoImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/server/model/dao/implementation/UserDaoImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/server/model/utils/implementation/ServerUtilsImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/server/model/utils/implementation/ServerUtilsImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/server/view/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/server/view/MainClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/server/view/controller/AdvirtisingWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/server/view/controller/AdvirtisingWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/server/view/controller/CountriesWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/server/view/controller/CountriesWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/server/view/controller/DisplayUsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/server/view/controller/DisplayUsersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/server/view/controller/MaleFemaleStatWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/server/view/controller/MaleFemaleStatWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/server/view/controller/OnlineOfflineWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/server/view/controller/OnlineOfflineWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/server/view/controller/RegistrationWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/server/view/controller/RegistrationWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/server/view/factory/DataFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/server/view/factory/DataFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/server/view/factory/ParentFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/server/view/factory/ParentFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iti/server/view/validation/implementation/ValidationImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iti/server/view/validation/implementation/ValidationImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/server-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/server-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,32 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerChatImplementation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientInvitationImplementation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="166" column="120" selection-start-line="166" selection-start-column="120" selection-end-line="166" selection-end-column="120" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientEnteranceImplementation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+            <state relative-caret-position="18">
+              <caret line="98" selection-start-line="98" selection-end-line="98" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,10 +72,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientRegisterationImplementation.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientInvitationImplementation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="99">
+              <caret line="153" column="13" lean-forward="true" selection-start-line="153" selection-start-column="13" selection-end-line="153" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,40 +84,38 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientUpdationImplementation.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/UserInvitationDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="110" column="64" selection-start-line="110" selection-start-column="64" selection-end-line="110" selection-end-column="64" />
+            <state relative-caret-position="216">
+              <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="66" column="34" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1142#1143#0" expanded="true" />
+                <element signature="e#1190#1191#0" expanded="true" />
+                <element signature="e#3448#3449#0" expanded="true" />
+                <element signature="e#3472#3473#0" expanded="true" />
+                <element signature="e#3938#3946#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserChatDaoImplementaion.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientEnteranceImplementation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="41" column="9" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="41" selection-end-column="9" />
+            <state relative-caret-position="414">
+              <caret line="54" column="65" selection-start-line="54" selection-start-column="65" selection-end-line="54" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1231#1232#0" expanded="true" />
-                <element signature="e#1258#1259#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserContactDaoImplementation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="30" column="69" selection-start-line="30" selection-start-column="69" selection-end-line="30" selection-end-column="69" />
-              <folding>
-                <element signature="method#persistent#0;class#UserContactDaoImplementation#0" />
-                <element signature="method#reterive#0;class#UserContactDaoImplementation#0" />
-                <element signature="method#reteriveOnlineFriends#0;class#UserContactDaoImplementation#0" />
               </folding>
             </state>
           </provider>
@@ -109,37 +124,36 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserDaoImplementation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="66" column="20" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="20" />
+            <state relative-caret-position="72">
+              <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
               <folding>
-                <element signature="e#1799#1800#0" expanded="true" />
-                <element signature="e#1826#1827#0" expanded="true" />
-                <element signature="e#1909#1910#0" expanded="true" />
-                <element signature="e#1936#1937#0" expanded="true" />
+                <element signature="e#807#808#0" expanded="true" />
+                <element signature="e#855#856#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserGroupDaoImplementation.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/ChatDaoImplementation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="185">
+              <caret line="62" column="31" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserContactDaoImplementation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-72">
-              <caret line="63" column="27" lean-forward="true" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
+            <state relative-caret-position="374">
+              <caret line="65" column="7" lean-forward="true" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
               <folding>
-                <element signature="method#deleteFromSender#0;class#UserInvitationDaoImplementation#0" />
-                <element signature="method#deleteFromReceiver#0;class#UserInvitationDaoImplementation#0" />
-                <element signature="method#update#0;class#UserInvitationDaoImplementation#0" />
-                <element signature="method#updateIgnoreFlag#0;class#UserInvitationDaoImplementation#0" />
+                <element signature="method#reterive#0;class#UserContactDaoImplementation#0" />
+                <element signature="method#reteriveOnlineFriends#0;class#UserContactDaoImplementation#0" />
               </folding>
             </state>
           </provider>
@@ -179,6 +193,7 @@
       <find>usercon</find>
       <find>start</find>
       <find>getme</find>
+      <find>add</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -209,14 +224,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/UserChatDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/UserGroupDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/UserInvitationDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/ChatDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/iti/server/model/statistacs/ServerInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/iti/server/controller/ServerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/iti/server/model/serverInterfaceImplementation/SereverImpelementation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/GroupChatDaoImplementation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserGroupDaoImplementation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/iti/server/view/controller/DisplayUsersController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/iti/server/admin/modal/AdminModel.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/iti/server/model/dao/implementation/ChatDaoImplementationTest.java" />
@@ -224,9 +236,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/iti/server/admin/modal/implementation/AdminModelImplementationTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/iti/server/model/dal/cfg/DBConnection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientEnteranceImplementation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserDaoImplementation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserChatDaoImplementaion.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/ChatDaoImplementation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/iti/server/admin/modal/implementation/AdminModelImplementation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/iti/server/view/controller/RegistrationWindowController.java" />
@@ -237,6 +246,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerChatImplementation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientUpdationImplementation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientRegisterationImplementation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserChatDaoImplementaion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/GroupChatDaoImplementation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientEnteranceImplementation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/UserInvitationDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserDaoImplementation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientInvitationImplementation.java" />
       </list>
     </option>
@@ -283,6 +298,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -329,6 +345,27 @@
               <item name="server" type="b2602c69:ProjectViewProjectNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="implementation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -343,13 +380,12 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552487836562" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552496602481" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ChatCommanServices" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -484,7 +520,8 @@
       <workItem from="1552286945827" duration="22282000" />
       <workItem from="1552415945501" duration="11295000" />
       <workItem from="1552465731550" duration="4516000" />
-      <workItem from="1552483926866" duration="3659000" />
+      <workItem from="1552483926866" duration="8501000" />
+      <workItem from="1552496688784" duration="2036000" />
     </task>
     <task id="LOCAL-00001" summary="finish S">
       <created>1550504222471</created>
@@ -511,7 +548,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="269807000" />
+    <option name="totallyTimeSpent" value="276685000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -526,7 +563,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49863762" visible="true" weight="0.28971255" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49863762" visible="true" weight="0.29425114" />
       <window_info id="Structure" order="1" sideWeight="0.5013624" side_tool="true" weight="0.30786687" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -570,37 +607,37 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java</url>
-          <line>80</line>
+          <line>133</line>
           <properties />
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java</url>
-          <line>91</line>
+          <line>144</line>
           <properties />
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java</url>
-          <line>101</line>
+          <line>161</line>
           <properties />
           <option name="timeStamp" value="85" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java</url>
-          <line>99</line>
+          <line>159</line>
           <properties />
           <option name="timeStamp" value="86" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java</url>
-          <line>105</line>
+          <line>165</line>
           <properties />
           <option name="timeStamp" value="87" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java</url>
-          <line>107</line>
+          <line>167</line>
           <properties />
           <option name="timeStamp" value="88" />
         </line-breakpoint>
@@ -618,19 +655,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java</url>
-          <line>97</line>
+          <line>157</line>
           <properties />
           <option name="timeStamp" value="94" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java</url>
-          <line>103</line>
+          <line>163</line>
           <properties />
           <option name="timeStamp" value="95" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java</url>
-          <line>104</line>
+          <line>164</line>
           <properties />
           <option name="timeStamp" value="96" />
         </line-breakpoint>
@@ -726,7 +763,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java</url>
-          <line>100</line>
+          <line>160</line>
           <properties />
           <option name="timeStamp" value="144" />
         </line-breakpoint>
@@ -738,175 +775,169 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserDaoImplementation.java</url>
-          <line>96</line>
+          <line>101</line>
           <properties />
           <option name="timeStamp" value="151" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserDaoImplementation.java</url>
-          <line>97</line>
+          <line>102</line>
           <properties />
           <option name="timeStamp" value="152" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserDaoImplementation.java</url>
-          <line>102</line>
+          <line>107</line>
           <properties />
           <option name="timeStamp" value="153" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserDaoImplementation.java</url>
-          <line>103</line>
+          <line>108</line>
           <properties />
           <option name="timeStamp" value="154" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserDaoImplementation.java</url>
-          <line>105</line>
+          <line>110</line>
           <properties />
           <option name="timeStamp" value="155" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserDaoImplementation.java</url>
-          <line>106</line>
+          <line>111</line>
           <properties />
           <option name="timeStamp" value="156" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserDaoImplementation.java</url>
-          <line>109</line>
+          <line>114</line>
           <properties />
           <option name="timeStamp" value="157" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientInvitationImplementation.java</url>
-          <line>139</line>
-          <properties />
-          <option name="timeStamp" value="160" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientInvitationImplementation.java</url>
-          <line>140</line>
+          <line>166</line>
           <properties />
           <option name="timeStamp" value="161" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java</url>
-          <line>135</line>
+          <line>195</line>
           <properties />
           <option name="timeStamp" value="162" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java</url>
-          <line>142</line>
+          <line>202</line>
           <properties />
           <option name="timeStamp" value="163" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java</url>
-          <line>141</line>
+          <line>201</line>
           <properties />
           <option name="timeStamp" value="164" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java</url>
-          <line>145</line>
+          <line>205</line>
           <properties />
           <option name="timeStamp" value="170" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java</url>
-          <line>147</line>
+          <line>207</line>
           <properties />
           <option name="timeStamp" value="172" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java</url>
-          <line>148</line>
+          <line>208</line>
           <properties />
           <option name="timeStamp" value="173" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java</url>
-          <line>149</line>
+          <line>209</line>
           <properties />
           <option name="timeStamp" value="174" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java</url>
-          <line>150</line>
+          <line>210</line>
           <properties />
           <option name="timeStamp" value="175" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java</url>
-          <line>152</line>
+          <line>212</line>
           <properties />
           <option name="timeStamp" value="176" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java</url>
-          <line>153</line>
+          <line>213</line>
           <properties />
           <option name="timeStamp" value="177" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java</url>
-          <line>151</line>
+          <line>211</line>
           <properties />
           <option name="timeStamp" value="178" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java</url>
-          <line>154</line>
+          <line>214</line>
           <properties />
           <option name="timeStamp" value="179" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java</url>
-          <line>155</line>
+          <line>215</line>
           <properties />
           <option name="timeStamp" value="180" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java</url>
-          <line>156</line>
+          <line>216</line>
           <properties />
           <option name="timeStamp" value="181" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java</url>
-          <line>157</line>
+          <line>217</line>
           <properties />
           <option name="timeStamp" value="182" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java</url>
-          <line>158</line>
+          <line>218</line>
           <properties />
           <option name="timeStamp" value="183" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java</url>
-          <line>159</line>
+          <line>219</line>
           <properties />
           <option name="timeStamp" value="184" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java</url>
-          <line>160</line>
+          <line>220</line>
           <properties />
           <option name="timeStamp" value="185" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java</url>
-          <line>166</line>
+          <line>226</line>
           <properties />
           <option name="timeStamp" value="186" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java</url>
-          <line>168</line>
+          <line>228</line>
           <properties />
           <option name="timeStamp" value="187" />
         </line-breakpoint>
@@ -1151,18 +1182,6 @@
           <option name="timeStamp" value="267" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientInvitationImplementation.java</url>
-          <line>129</line>
-          <properties />
-          <option name="timeStamp" value="275" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientInvitationImplementation.java</url>
-          <line>117</line>
-          <properties />
-          <option name="timeStamp" value="278" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/utils/implementation/ServerUtilsImplementation.java</url>
           <line>117</line>
           <properties />
@@ -1181,14 +1200,8 @@
           <option name="timeStamp" value="284" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientInvitationImplementation.java</url>
-          <line>128</line>
-          <properties />
-          <option name="timeStamp" value="286" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientEnteranceImplementation.java</url>
-          <line>81</line>
+          <line>90</line>
           <properties />
           <option name="timeStamp" value="308" />
         </line-breakpoint>
@@ -1310,7 +1323,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserDaoImplementation.java</url>
-          <line>85</line>
+          <line>90</line>
           <properties class="com.iti.server.model.dao.implementation.UserDaoImplementation">
             <option name="EMULATED" value="true" />
           </properties>
@@ -1396,13 +1409,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/UserChatDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="80" selection-start-line="11" selection-start-column="80" selection-end-line="11" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -1420,13 +1426,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/UserInvitationDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1585,19 +1584,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/MessageSettingDaoImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-          <folding>
-            <element signature="e#529#530#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#668#669#0" expanded="true" />
-            <element signature="e#695#696#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/MessageSettingDaoImp.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/LoginDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -1612,24 +1599,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/ChatDaoImplementation.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserGroupDaoImplementation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
+        <state relative-caret-position="198">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientUpdationImplementation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="110" column="64" selection-start-line="110" selection-start-column="64" selection-end-line="110" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#persistent#0;class#ChatDaoImplementation#0" />
-            <element signature="method#reterive#0;class#ChatDaoImplementation#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientRegisterationImplementation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/UserChatDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/GroupChatDaoImplementation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="54">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
-            <element signature="method#persistent#0;class#GroupChatDaoImplementation#0" />
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#908#909#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserChatDaoImplementaion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="43" column="7" lean-forward="true" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1231#1232#0" expanded="true" />
+            <element signature="e#1258#1259#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1645,77 +1667,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserChatDaoImplementaion.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/ChatDaoImplementation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="41" column="9" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="41" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1231#1232#0" expanded="true" />
-            <element signature="e#1258#1259#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserDaoImplementation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="66" column="20" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="20" />
-          <folding>
-            <element signature="e#1799#1800#0" expanded="true" />
-            <element signature="e#1826#1827#0" expanded="true" />
-            <element signature="e#1909#1910#0" expanded="true" />
-            <element signature="e#1936#1937#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserContactDaoImplementation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="30" column="69" selection-start-line="30" selection-start-column="69" selection-end-line="30" selection-end-column="69" />
-          <folding>
-            <element signature="method#persistent#0;class#UserContactDaoImplementation#0" />
-            <element signature="method#reterive#0;class#UserContactDaoImplementation#0" />
-            <element signature="method#reteriveOnlineFriends#0;class#UserContactDaoImplementation#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserGroupDaoImplementation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-72">
-          <caret line="63" column="27" lean-forward="true" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
-          <folding>
-            <element signature="method#deleteFromSender#0;class#UserInvitationDaoImplementation#0" />
-            <element signature="method#deleteFromReceiver#0;class#UserInvitationDaoImplementation#0" />
-            <element signature="method#update#0;class#UserInvitationDaoImplementation#0" />
-            <element signature="method#updateIgnoreFlag#0;class#UserInvitationDaoImplementation#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientUpdationImplementation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="110" column="64" selection-start-line="110" selection-start-column="64" selection-end-line="110" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerChatImplementation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
+        <state relative-caret-position="185">
+          <caret line="62" column="31" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1724,28 +1679,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientEnteranceImplementation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        <state relative-caret-position="414">
+          <caret line="54" column="65" selection-start-line="54" selection-start-column="65" selection-end-line="54" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerChatImplementation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/UserInvitationDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserInvitationDaoImplementation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="66" column="34" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1142#1143#0" expanded="true" />
+            <element signature="e#1190#1191#0" expanded="true" />
+            <element signature="e#3448#3449#0" expanded="true" />
+            <element signature="e#3472#3473#0" expanded="true" />
+            <element signature="e#3938#3946#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserContactDaoImplementation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="65" column="7" lean-forward="true" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
+          <folding>
+            <element signature="method#reterive#0;class#UserContactDaoImplementation#0" />
+            <element signature="method#reteriveOnlineFriends#0;class#UserContactDaoImplementation#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/dao/implementation/UserDaoImplementation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+          <folding>
+            <element signature="e#807#808#0" expanded="true" />
+            <element signature="e#855#856#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientInvitationImplementation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="166" column="120" selection-start-line="166" selection-start-column="120" selection-end-line="166" selection-end-column="120" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iti/server/model/ServerClientRegisterationImplementation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="99">
+          <caret line="153" column="13" lean-forward="true" selection-start-line="153" selection-start-column="13" selection-end-line="153" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

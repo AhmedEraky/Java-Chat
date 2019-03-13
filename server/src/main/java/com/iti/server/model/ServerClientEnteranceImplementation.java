@@ -46,7 +46,16 @@ public class ServerClientEnteranceImplementation extends UnicastRemoteObject imp
     @Override
     public void registration(User user) throws RemoteException, RegistrationDuplicateException {
         UserDao userDao=new UserDaoImplementation(dbConnection);
-        userDao.persistent(user,clientSession.get(user.getPhno()));
+        if(clientSession.containsKey(user.getPhno()))
+        {
+            Session session=dbConnection.getConnection().openSession();
+            userDao.persistent(user,clientSession.get(user.getPhno()));
+        }
+        else {
+            Session session=dbConnection.getConnection().openSession();
+            userDao.persistent(user,session);
+
+        }
 
     }
 
