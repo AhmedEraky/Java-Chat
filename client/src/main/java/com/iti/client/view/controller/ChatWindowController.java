@@ -197,7 +197,7 @@ public class ChatWindowController extends ParentMenuBarController {
 
                                 labelNewMessage.setStyle("-fx-font-family:"+message.getMessageSettings().getFontStyle());
                                 labelNewMessage.setStyle(labelNewMessage.getStyle()+"; -fx-font-size: "+message.getMessageSettings().getFontSize());
-                                labelNewMessage.setStyle(labelNewMessage.getStyle()+"; -fx-text-fill: "+message.getMessageSettings().getColor());
+                                labelNewMessage.setStyle(labelNewMessage.getStyle()+"; -fx-text-fill: "+message.getMessageSettings().getFontColor());
                                 if (message.getMessageSettings().isItalic())
                                     labelNewMessage.setStyle(labelNewMessage.getStyle()+ "; -fx-font-style: italic ");
                                 if (message.getMessageSettings().isBold())
@@ -220,7 +220,7 @@ public class ChatWindowController extends ParentMenuBarController {
 
                                 labelNewMessage.setStyle("; -fx-font-family:"+message.getMessageSettings().getFontStyle());
                                 labelNewMessage.setStyle(labelNewMessage.getStyle()+"; -fx-font-size: "+message.getMessageSettings().getFontSize());
-                                labelNewMessage.setStyle(labelNewMessage.getStyle()+"; -fx-text-fill: "+message.getMessageSettings().getColor());
+                                labelNewMessage.setStyle(labelNewMessage.getStyle()+"; -fx-text-fill: "+message.getMessageSettings().getFontColor());
                                 if (message.getMessageSettings().isItalic())
                                     labelNewMessage.setStyle(labelNewMessage.getStyle()+ "; -fx-font-style: italic ");
                                 if (message.getMessageSettings().isBold())
@@ -233,7 +233,10 @@ public class ChatWindowController extends ParentMenuBarController {
                                 senderImage.setFitHeight(20);
                                 hBox.getChildren().add(senderImage);
                                 hBox.getChildren().add(labelNewMessage);
-                                setGraphic(hBox);
+
+                                Platform.runLater(() -> {
+                                    setGraphic(hBox);
+                                });
                             }
                         }
                     }
@@ -331,7 +334,7 @@ public class ChatWindowController extends ParentMenuBarController {
         messageSettings.setFontStyle(selectedFont);
 
         selectedColor = "#" + Integer.toHexString(colorPicker.getValue().hashCode());
-        messageSettings.setColor(selectedColor);
+        messageSettings.setFontColor(selectedColor);
 
         if(underlineBtn.isSelected())
             messageSettings.setUnderline(true);
@@ -389,14 +392,7 @@ public class ChatWindowController extends ParentMenuBarController {
         entityMessage.setSenderUser(mainClass.getUser());
         entityMessage.setId(chatID);
         MessageSettings messageSettings=getMessageSetting();
-        try {
-
-            String styleID=mainClass.getServerServiceLocator().getChatService().validateStyle(messageSettings,mainClass.getUser());
-            entityMessage.setMessageSettings(messageSettings);
-
-        } catch (RemoteException e) {
-            e.printStackTrace();
-        }
+        entityMessage.setMessageSettings(messageSettings);
         chatSession.get(chatID).add(entityMessage);
         if (!entityMessage.getMessage().equals("")) {
             Platform.runLater(() -> {
@@ -456,7 +452,7 @@ public class ChatWindowController extends ParentMenuBarController {
         }
         else {
             selectedColor = "#" + Integer.toHexString(colorPicker.getValue().hashCode());
-            messageSettings.setColor(selectedColor);
+            messageSettings.setFontColor(selectedColor);
             Font selectedFont = Font.font(fontsCB.getValue().toString());
             messageSettings.setFontStyle(selectedFont.toString());
             String size = sizeCB.getValue().toString();
@@ -693,7 +689,7 @@ public class ChatWindowController extends ParentMenuBarController {
                         //create message settings
                         MessageSettingsType messageSettings = factory.createMessageSettingsType();
                         messageSettings.setBold(messagesList.get(i).getMessageSettings().isBold());
-                        messageSettings.setColor(messagesList.get(i).getMessageSettings().getColor());
+                        messageSettings.setColor(messagesList.get(i).getMessageSettings().getFontColor());
                         messageSettings.setFontSize(messagesList.get(i).getMessageSettings().getFontSize());
                         messageSettings.setFontStyle(messagesList.get(i).getMessageSettings().getFontStyle());
                         messageSettings.setItalic(messagesList.get(i).getMessageSettings().isItalic());

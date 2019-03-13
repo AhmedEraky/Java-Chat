@@ -108,12 +108,12 @@ public class RegistrationWindowController implements Initializable {
         // no image wait for image
         User user = new User();
         user.setPhno(phoneTF.getText());
-        user.setFirstName(firstNameTF.getText());
-        user.setLastName(lastNameTF.getText());
+        user.setFirstName(firstNameTF.getText().replace(" ",""));
+        user.setLastName(lastNameTF.getText().replace(" ",""));
         user.setEmail(emailTF.getText());
         user.setPassword(passwordTF.getText());
         user.setImage(imageByte);
-        user.setStatus("onlineAvailable");
+        user.setStatus("offline");
         if (countryCB.getValue() == null) {
             user.setCountry("");
         } else {

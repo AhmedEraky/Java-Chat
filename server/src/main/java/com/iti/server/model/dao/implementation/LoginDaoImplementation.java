@@ -14,16 +14,7 @@ import com.iti.server.model.dao.LoginDao;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.criterion.Restrictions;
-
-import java.rmi.RemoteException;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.List;
 import java.util.Map;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 /**
  *
  * @author pc
@@ -46,8 +37,6 @@ public class LoginDaoImplementation implements LoginDao {
         {
             System.out.println("done");
         }
-
-
     }
 
     @Override

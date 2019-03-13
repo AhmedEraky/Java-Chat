@@ -3,6 +3,7 @@ F:\Study\iti\project\java chat\ChatCommanServices\src\main\java\com\iti\ChatComm
 F:\Study\iti\project\java chat\ChatCommanServices\src\main\java\com\iti\ChatCommanServices\model\entity\user\EntityLogin.java
 F:\Study\iti\project\java chat\ChatCommanServices\src\main\java\com\iti\ChatCommanServices\model\exception\RegistrationDuplicateException.java
 F:\Study\iti\project\java chat\ChatCommanServices\src\main\java\com\iti\ChatCommanServices\model\ClientInterfaces\ClientServiceInterface.java
+F:\Study\iti\project\java chat\ChatCommanServices\src\main\java\com\iti\ChatCommanServices\model\entity\dto\message\MessageSettings.java
 F:\Study\iti\project\java chat\ChatCommanServices\src\main\java\com\iti\ChatCommanServices\model\exception\LoginFaieldException.java
 F:\Study\iti\project\java chat\ChatCommanServices\src\main\java\com\iti\ChatCommanServices\model\entity\user\UserInvitationId.java
 F:\Study\iti\project\java chat\ChatCommanServices\src\main\java\com\iti\ChatCommanServices\model\entity\chat\UserGroupChat.java

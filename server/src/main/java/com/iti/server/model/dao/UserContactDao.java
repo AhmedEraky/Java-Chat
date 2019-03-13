@@ -9,8 +9,6 @@ import java.util.ArrayList;
 public interface UserContactDao {
 
     public void persistent(UserContact userContact, Session session);
-    public void delete(UserContact userContact, Session session);
-    public void update(UserContact userContact, Session session);
-    public ArrayList<User> reterive(String userPhoneNumber, Session session);
+     public ArrayList<User> reterive(String userPhoneNumber, Session session);
     public ArrayList<User> reteriveOnlineFriends(String phno, Session session);
 }

@@ -138,8 +138,7 @@ public class ServerChatImplementation extends UnicastRemoteObject implements Ser
 
     @Override
     public String validateStyle(MessageSettings messageSettings,User user) throws RemoteException {
-        MessageSetingDao messageSetingDao=new MessageSettingDaoImp(dbConnection);
-        return messageSetingDao.compareStyle(messageSettings,clientSession.get(user.getPhno()));
+        return "0";
     }
 
 }

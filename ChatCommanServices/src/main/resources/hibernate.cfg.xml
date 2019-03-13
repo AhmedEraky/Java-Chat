@@ -51,7 +51,7 @@ Contributor(s):
     <mapping class="com.iti.ChatCommanServices.model.entity.chat.UserChat"/>
     <mapping class="com.iti.ChatCommanServices.model.entity.user.UserContactId"/>
     <mapping class="com.iti.ChatCommanServices.model.entity.user.User"/>
-    <mapping class="com.iti.ChatCommanServices.model.entity.message.MessageSettings"/>
+    <mapping class="com.iti.ChatCommanServices.model.entity.dto.message.MessageSettings"/>
     <mapping class="com.iti.ChatCommanServices.model.entity.user.UserContact"/>
     <mapping class="com.iti.ChatCommanServices.model.entity.user.UserInvitation"/>
     <mapping class="com.iti.ChatCommanServices.model.entity.chat.Chat"/>

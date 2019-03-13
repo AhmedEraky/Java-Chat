@@ -38,6 +38,7 @@ public class ClientServiceImplementation extends UnicastRemoteObject implements 
             });
         }
     }
+
     private String getrealURL() {
         File currDir = new File(".");
         String path = currDir.getAbsolutePath();

@@ -16,6 +16,7 @@ com\iti\ChatCommanServices\model\entity\chat\UserGroupChatId.class
 com\iti\ChatCommanServices\model\ClientInterfaces\ClientServiceInterface.class
 com\iti\ChatCommanServices\model\exception\RejectFileException.class
 com\iti\ChatCommanServices\model\ServerInterfaces\ServerClientInvitationInterface.class
+com\iti\ChatCommanServices\model\entity\dto\message\MessageSettings.class
 com\iti\ChatCommanServices\model\entity\user\EntityLogin.class
 com\iti\ChatCommanServices\model\ServerInterfaces\ServerClientEnteranceInterface.class
 com\iti\ChatCommanServices\model\entity\message\EntityMessage.class
