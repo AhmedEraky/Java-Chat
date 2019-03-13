@@ -37,7 +37,6 @@ public class ServerClientInvitationImplementation extends UnicastRemoteObject im
     LoginDao loginDao;
     DBConnection dbConnection;
     public static HashMap<String, ClientServiceInterface> clients;
-    public static HashMap<String, Session> clientSession;
 
     ServerUtils utils;
 
@@ -45,7 +44,9 @@ public class ServerClientInvitationImplementation extends UnicastRemoteObject im
         this.dbConnection=dbConnection;
         clients=new HashMap<>();
         utils=new ServerUtilsImplementation();
-        clientSession=new HashMap<>();
+        if(ServerClientEnteranceImplementation.clientSession==null)
+            ServerClientEnteranceImplementation.clientSession=new HashMap<>();
+
 
     }
 
@@ -57,7 +58,9 @@ public class ServerClientInvitationImplementation extends UnicastRemoteObject im
     public void registerClient(String clientID, ClientServiceInterface client) throws RemoteException {
         clients.put(clientID,client);
         Session session=dbConnection.getConnection().openSession();
-        clientSession.put(clientID,session);
+        if(!ServerClientEnteranceImplementation.clientSession.containsKey(clientID))
+            ServerClientEnteranceImplementation.clientSession.put(clientID,session);
+
     }
     @Override
     public void acceptInvitation(UserInvitation userInvitation) throws RemoteException {
@@ -78,7 +81,7 @@ public class ServerClientInvitationImplementation extends UnicastRemoteObject im
     @Override
     public void rejectInvitation(UserInvitation userInvitation) throws RemoteException {
         UserInvitationDao userInvitationDao= new UserInvitationDaoImplementation(dbConnection);
-        userInvitationDao.deleteFromReceiver(userInvitation,clientSession.get(userInvitation.getUser().getPhno()));
+        userInvitationDao.deleteFromReceiver(userInvitation,ServerClientEnteranceImplementation.clientSession.get(userInvitation.getUser().getPhno()));
     }
 
 
@@ -140,13 +143,13 @@ public class ServerClientInvitationImplementation extends UnicastRemoteObject im
     public ArrayList<User> getInvitations(String userphoneNumber) throws RemoteException {
         //ArrayList<User> friendUserInvtationsList;
         UserInvitationDao userInvitationDao = new UserInvitationDaoImplementation(dbConnection);
-        return userInvitationDao.reterive(userphoneNumber,clientSession.get(userphoneNumber));
+        return userInvitationDao.reterive(userphoneNumber,ServerClientEnteranceImplementation.clientSession.get(userphoneNumber));
     }
 
     @Override
     public int getInvitationsCount(String userphoneNumber) throws RemoteException {
         UserInvitationDao userInvtationCountDao = new UserInvitationDaoImplementation(dbConnection);
-        int userInvtationCount = userInvtationCountDao.getInvtationCount(userphoneNumber,clientSession.get(userphoneNumber));
+        int userInvtationCount = userInvtationCountDao.getInvtationCount(userphoneNumber,ServerClientEnteranceImplementation.clientSession.get(userphoneNumber));
         return userInvtationCount;
     }
 
@@ -154,14 +157,14 @@ public class ServerClientInvitationImplementation extends UnicastRemoteObject im
     public void ignoreInvitation(UserInvitation userInvitation) throws RemoteException {
 
         UserInvitationDao userInvtationDao = new UserInvitationDaoImplementation(dbConnection);
-        userInvtationDao.updateIgnoreFlag(userInvitation,clientSession.get(userInvitation.getUser()));
+        userInvtationDao.updateIgnoreFlag(userInvitation,ServerClientEnteranceImplementation.clientSession.get(userInvitation.getUser()));
 
     }
 
     @Override
     public ArrayList<User> getInvitationsUsingSenderPhone(String userphoneNumber) throws RemoteException {
         UserInvitationDao userInvitationDao = new UserInvitationDaoImplementation(dbConnection);
-        return userInvitationDao.reteriveInvitationUsingSenderPhone(userphoneNumber,clientSession.get(userphoneNumber));
+        return userInvitationDao.reteriveInvitationUsingSenderPhone(userphoneNumber,ServerClientEnteranceImplementation.clientSession.get(userphoneNumber));
     }
 
 }

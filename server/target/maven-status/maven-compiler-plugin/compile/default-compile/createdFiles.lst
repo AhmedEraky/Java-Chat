@@ -5,7 +5,6 @@ com\iti\server\controller\ServerSetup.class
 com\iti\server\view\controller\AdvirtisingWindowController.class
 com\iti\server\view\controller\DisplayUsersController.class
 com\iti\server\view\controller\RegistrationWindowController.class
-com\iti\server\model\dao\implementation\MessageSettingDaoImp.class
 com\iti\server\model\utils\ServerUtils.class
 com\iti\server\model\dao\ChatDao.class
 com\iti\server\model\ServerChatImplementation.class
