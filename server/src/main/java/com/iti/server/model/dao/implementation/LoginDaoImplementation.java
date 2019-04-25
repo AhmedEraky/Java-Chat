@@ -11,15 +11,10 @@ import com.iti.ChatCommanServices.model.entity.user.User;
 import com.iti.ChatCommanServices.model.exception.LoginFaieldException;
 import com.iti.server.model.dal.cfg.DBConnection;
 import com.iti.server.model.dao.LoginDao;
-
-import java.rmi.RemoteException;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.criterion.Restrictions;
 import java.util.Map;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 /**
  *
  * @author pc
@@ -32,8 +27,30 @@ public class LoginDaoImplementation implements LoginDao {
         this.dbConnection = dBConnection;
     }
 
+    @Override
+    public void reterive(EntityLogin entityLogin, Map<String, ClientServiceInterface> clients, Session session) throws LoginFaieldException {
+        Criteria criteria=session.createCriteria(User.class).add(Restrictions.eq("userPhoneNumber",entityLogin.getPhno())).add(Restrictions.eq("password",entityLogin.getPassword()));
+        User user= (User) criteria.uniqueResult();
+        if(user==null){
+            throw new LoginFaieldException("login failed");
+        }else
+        {
+            System.out.println("done");
+        }
+    }
 
     @Override
+    public void changePasswordByNewClient(EntityLogin entityLogin, String newPassword, Session session) {
+
+    }
+
+    @Override
+    public void samePasswordByNewClient(EntityLogin entityLogin, Session session) {
+
+    }
+
+
+   /* @Override
     public void reterive(EntityLogin entityLogin, Map<String, ClientServiceInterface> clients) throws LoginFaieldException {
         //excute code here or call function do task
 
@@ -90,5 +107,5 @@ public class LoginDaoImplementation implements LoginDao {
             Logger.getLogger(LoginDaoImplementation.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-
+*/
 }

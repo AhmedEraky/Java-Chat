@@ -7,23 +7,23 @@ import com.iti.server.model.ServerClientInvitationImplementation;
 import com.iti.server.model.ServerClientRegisterationImplementation;
 import com.iti.server.model.ServerClientUpdationImplementation;
 import com.iti.server.model.dal.cfg.DBConnection;
-import com.iti.server.model.serverInterface.ServerInterface;
 import com.iti.server.model.serverInterfaceImplementation.SereverImpelementation;
+import com.iti.server.model.statistacs.ServerInterface;
+
 import java.rmi.RemoteException;
 
 public class ServerController {
-   public DBConnection dbConnction;
-   ServerClientRegisterationInterface serverInterface;
-   ServerChatInterface serverChatInterface;
-   ServerClientEnteranceInterface serverClientEnteranceInterface;
-   ServerClientInvitationInterface serverClientInvitationInterface;
-   ServerClientUpdationInterface serverClientUpdationInterface;
-   ServerInterface serverStatsticsInterface;
+    public DBConnection dbConnction;
+    ServerClientRegisterationInterface serverInterface;
+    ServerChatInterface serverChatInterface;
+    ServerClientEnteranceInterface serverClientEnteranceInterface;
+    ServerClientInvitationInterface serverClientInvitationInterface;
+    ServerClientUpdationInterface serverClientUpdationInterface;
+    ServerInterface serverStatsticsInterface;
 
     public ServerController() {
 
         dbConnction=new DBConnection();
-        dbConnction.connectToDriver();
         dbConnction.ConnectToDB();
         try {
             serverInterface=new ServerClientRegisterationImplementation(dbConnction);
@@ -32,7 +32,6 @@ public class ServerController {
             serverClientInvitationInterface=new ServerClientInvitationImplementation(dbConnction);
             serverClientUpdationInterface=new ServerClientUpdationImplementation(dbConnction);
             serverStatsticsInterface=new SereverImpelementation(dbConnction);
-            
         } catch (RemoteException e) {
             e.printStackTrace();
         }

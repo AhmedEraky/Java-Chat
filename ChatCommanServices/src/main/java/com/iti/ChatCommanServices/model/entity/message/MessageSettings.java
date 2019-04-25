@@ -74,5 +74,5 @@ public class MessageSettings implements Serializable {
     public void setTimestamp(Timestamp timestamp) {
         this.timestamp = timestamp;
     }
-    
+
 }

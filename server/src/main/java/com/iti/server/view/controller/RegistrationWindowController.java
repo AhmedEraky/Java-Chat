@@ -108,12 +108,12 @@ public class RegistrationWindowController implements Initializable {
         // no image wait for image
         User user = new User();
         user.setPhno(phoneTF.getText());
-        user.setFirstName(firstNameTF.getText());
-        user.setLastName(lastNameTF.getText());
+        user.setFirstName(firstNameTF.getText().replace(" ",""));
+        user.setLastName(lastNameTF.getText().replace(" ",""));
         user.setEmail(emailTF.getText());
         user.setPassword(passwordTF.getText());
-        user.setPhoto(imageByte);
-        user.setStatus("onlineAvailable");
+        user.setImage(imageByte);
+        user.setStatus("offline");
         if (countryCB.getValue() == null) {
             user.setCountry("");
         } else {
@@ -129,7 +129,7 @@ public class RegistrationWindowController implements Initializable {
 
         //user.setDatBirth(new Date(1999, 11, 28));
         java.sql.Date gettedDatePickerDate=java.sql.Date.valueOf(datePicker.getValue());
-        user.setDatBirth(gettedDatePickerDate);
+        user.setDateBirth(gettedDatePickerDate);
 
         user.setBio(bioTA.getText());
         if (validator.validate(user, confirmationTF.getText())) {

@@ -1,19 +1,27 @@
 package com.iti.server.model.dao.implementation;
 
-
 import com.iti.ChatCommanServices.model.entity.user.User;
 import com.iti.ChatCommanServices.model.entity.user.UserContact;
+import com.iti.ChatCommanServices.model.entity.user.UserContactId;
 import com.iti.ChatCommanServices.model.entity.user.UserInvitation;
+import com.iti.ChatCommanServices.model.entity.user.UserInvitationId;
 import com.iti.server.model.dal.cfg.DBConnection;
 import com.iti.server.model.dao.UserInvitationDao;
+import org.hibernate.Session;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import org.hibernate.Criteria;
+import org.hibernate.Transaction;
+import org.hibernate.criterion.Projections;
+import org.hibernate.criterion.Restrictions;
+import org.hibernate.query.Query;
 
 public class UserInvitationDaoImplementation implements UserInvitationDao {
 
@@ -23,7 +31,129 @@ public class UserInvitationDaoImplementation implements UserInvitationDao {
     public UserInvitationDaoImplementation(DBConnection dbConnection) {
         this.dbConnection = dbConnection;
     }
+
     @Override
+    public void persistent(UserInvitation userInvitation, Session session) {
+
+        Transaction transaction = session.beginTransaction();
+
+        session.save(userInvitation);
+        transaction.commit();
+    }
+
+    @Override
+    public void deleteFromSender(UserInvitation userInvitation, Session session) {
+        Transaction transaction = session.beginTransaction();
+        String hql = "delete from UserInvitation u where u.id= :uid";
+        Query query = session.createQuery(hql);
+        UserInvitationId userInvitationId = new UserInvitationId();
+        userInvitationId.setSenderPhoneNumber(userInvitation.getId().getSenderPhoneNumber());
+        userInvitationId.setReceiverPhoneNumber(userInvitation.getId().getReceiverPhoneNumber());
+        query.setParameter("uid", userInvitationId).executeUpdate();
+//query.setParameter("uid", userInvitation.getUser()).executeUpdate();
+        // your code end
+        transaction.commit();
+    }
+
+    @Override
+    public void deleteFromReceiver(UserInvitation userInvitation, Session session) {
+       /*
+          UserInvitation userInvitationdeleted = (UserInvitation ) session.createCriteria(UserInvitation.class).setProjection(Projections.property("UserInvitationId")).add(Restrictions.and(Restrictions.eq("senderPhoneNumber", userInvitation.getId().getReceiverPhoneNumber()),Restrictions.eq("senderPhoneNumber", userInvitation.getId().getSenderPhoneNumber()))).uniqueResult();
+  session.delete(userInvitationdeleted);
+        */
+        Transaction transaction = session.beginTransaction();
+
+        // your code
+        String hql = "delete from UserInvitation u where u.id= :uid";
+        Query query = session.createQuery(hql);
+        UserInvitationId userInvitationId = new UserInvitationId();
+        userInvitationId.setSenderPhoneNumber(userInvitation.getId().getReceiverPhoneNumber());
+        userInvitationId.setReceiverPhoneNumber(userInvitation.getId().getSenderPhoneNumber());
+        query.setParameter("uid", userInvitationId).executeUpdate();
+//query.setParameter("uid", userInvitation.getUser()).executeUpdate();
+        // your code end
+        transaction.commit();
+
+    }
+
+    @Override
+    public int getInvtationCount(String userPhone, Session session) {
+        return 0;
+    }
+
+    @Override
+    public void update(UserInvitation userInvitation, Session session) {
+
+    }
+
+    @Override
+    public ArrayList<User> reterive(String userPhone, Session session) {////////////
+        //retirve senderphonenum
+        List<UserInvitationId> userInvitationRx =  new ArrayList();
+        userInvitationRx = session.createCriteria(UserInvitation.class).setProjection(Projections.property("id")).list();
+        List<String> usersPhones=new ArrayList<String>();
+        //get senderphone from
+        for(UserInvitationId userInvitationId:userInvitationRx){
+            // usersPhones.add(userInvitationId.getSenderPhoneNumber());
+            if((userInvitationId.getReceiverPhoneNumber()).equals(userPhone)){
+                usersPhones.add(userInvitationId.getSenderPhoneNumber());
+            }
+
+
+        }
+
+
+        //retrieve user
+        ArrayList<User> users =  new ArrayList();
+        User userRetrived=new User();
+        for(int i=0;i<usersPhones.size();i++){
+            users.add((User) session.createCriteria(User.class).add(Restrictions.eq("userPhoneNumber", usersPhones.get(i))).uniqueResult());
+        }
+
+
+
+
+        return users;
+    }
+
+    @Override
+    public boolean CheckInvitationExist(UserContactId userContact, Session session) {
+        boolean flag = false;
+        Criteria criteria = session.createCriteria(User.class).add(Restrictions.eq("userPhoneNumber", userContact.getContact()));
+        User user = (User) criteria.uniqueResult();
+        ArrayList<User> users = new ArrayList();
+        for (UserInvitation userInvitation : user.getUserInvitations()) {
+            System.out.print(userInvitation.getId().getReceiverPhoneNumber());
+            if ((userInvitation.getId().getReceiverPhoneNumber()).equals(userContact.getPhoneNumber())) {
+                flag = true;
+            }
+        }
+
+        return flag;
+    }
+
+    @Override
+    public void updatSeenFriends(String phoneNumber, Session session) {///////////
+
+    }
+
+    @Override
+    public void updateIgnoreFlag(UserInvitation userInvitation, Session session) {
+
+    }
+
+    @Override
+    public ArrayList<User> reteriveInvitationUsingSenderPhone(String userPhoneNumber, Session session) {
+        Criteria criteria = session.createCriteria(User.class).add(Restrictions.eq("userPhoneNumber", userPhoneNumber));
+        User user = (User) criteria.uniqueResult();
+        ArrayList<User> users = new ArrayList();
+        for (UserInvitation userInvitation : user.getUserInvitations()) {
+            Criteria criteria1 = session.createCriteria(User.class).add(Restrictions.eq("userPhoneNumber", userInvitation.getId().getReceiverPhoneNumber()));
+            users.add((User) criteria1.uniqueResult());
+        }
+        return users;
+    }
+    /*  @Override
     public void persistent(UserInvitation userInvitation) {
 
         String persistentQuery="insert into user_invitation values(?,?,?);";
@@ -266,6 +396,6 @@ public class UserInvitationDaoImplementation implements UserInvitationDao {
     }
 
 
-
+     */
 
 }

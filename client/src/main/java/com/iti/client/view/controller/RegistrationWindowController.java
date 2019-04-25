@@ -113,7 +113,7 @@ public class RegistrationWindowController implements Initializable {
     private void signUp(ActionEvent actionEvent) {
         User user=new User();
         user.setPhno(phoneTF.getText());
-        user.setPhoto(imageByte);
+        user.setImage(imageByte);
         user.setFirstName(firstNameTF.getText());
         user.setLastName(lastNameTF.getText());
         user.setEmail(emailTF.getText());
@@ -141,11 +141,12 @@ public class RegistrationWindowController implements Initializable {
         else if(validator.validate(user, confirmationTF.getText() )){
             try {
                 java.sql.Date gettedDatePickerDate=java.sql.Date.valueOf(datePicker.getValue());
-                user.setDatBirth(gettedDatePickerDate);
+                user.setDateBirth(gettedDatePickerDate);
                 user.setBio(bioTA.getText());
 
                 mainClass.getServerServiceLocator().getEnteranceService().registration(user);
-                user.setClientInterface(mainClass.getClientServiceInterface());
+                //todo need to fix it
+                //user.setClientInterface(mainClass.getClientServiceInterface());
                 mainClass.setUser(user);
                 Parent root=ParentFactory.getChatWindowRoot(mainClass);
                 mainClass.changeScene(root);

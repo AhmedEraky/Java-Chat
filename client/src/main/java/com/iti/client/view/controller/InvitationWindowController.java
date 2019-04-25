@@ -82,7 +82,7 @@ public class InvitationWindowController extends ParentMenuBarController {
                             userNameLabel.setPrefWidth(200);
 
                             ImageView friendImage=new ImageView();
-                            byte [] imageByte = user.getPhoto();
+                            byte [] imageByte = user.getImage();
                             friendImage.setFitHeight(40);
                             friendImage.setFitWidth(40);
                             friendImage.setImage(new Image(new ByteArrayInputStream(imageByte)));
@@ -138,7 +138,8 @@ public class InvitationWindowController extends ParentMenuBarController {
     }
 
     private void rejectInvitation(User user) {
-        UserInvitation userInvitation=new UserInvitation();
+        //todo need to be done
+       /* UserInvitation userInvitation=new UserInvitation();
         userInvitation.setReceiverPhno(user.getPhno());
         userInvitation.setSenderPhno(mainClass.getUser().getPhno());
         try {
@@ -148,7 +149,7 @@ public class InvitationWindowController extends ParentMenuBarController {
             alertMessageException("sorry error occured in server");
         }
         invitationCount.setText("Count : "+userInvitationObseravleList.size());
-
+*/
     }
 
     private void getUserInvtations() {
@@ -171,7 +172,8 @@ public class InvitationWindowController extends ParentMenuBarController {
     }
 
     private void acceptInvitation(User user) {
-
+        //todo need to be done
+/*
         UserInvitation userInvitation=new UserInvitation();
         userInvitation.setSenderPhno(user.getPhno());
         userInvitation.setReceiverPhno(mainClass.getUser().getPhno());
@@ -182,9 +184,12 @@ public class InvitationWindowController extends ParentMenuBarController {
             alertMessageException("sorry error occured in server");
         }
         invitationCount.setText("Count : "+userInvitationObseravleList.size());
+*/
 
     }
     private void igonreInvitation(User user) {
+        //todo need to be done
+/*
         UserInvitation userInvitation=new UserInvitation();
         userInvitation.setSenderPhno(mainClass.getUser().getPhno());
         userInvitation.setReceiverPhno(user.getPhno());
@@ -198,6 +203,7 @@ public class InvitationWindowController extends ParentMenuBarController {
         }
 
         invitationCount.setText("Count : "+userInvitationObseravleList.size());
+*/
     }
 
 

@@ -1,8 +1,0 @@
-com\iti\server\model\dao\implementation\UserInvitationDaoImplementationTest.class
-com\iti\server\model\dao\implementation\UserChatDaoImplementationTest.class
-com\iti\server\admin\modal\implementation\AdminModelImplementationTest.class
-com\iti\server\model\dao\implementation\LoginDaoImplementationTest.class
-com\iti\server\model\dao\implementation\MessageSettingDaoImpTest.class
-com\iti\server\model\dao\implementation\ChatDaoImplementationTest.class
-com\iti\server\view\validation\implementation\ValidationImplementationTest.class
-com\iti\server\model\dao\MessageSetingDaoTest.class

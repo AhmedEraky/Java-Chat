@@ -7,6 +7,7 @@ package com.iti.client.view.controller;
 
 import com.iti.ChatCommanServices.model.entity.user.User;
 import com.iti.ChatCommanServices.model.entity.user.UserContact;
+import com.iti.ChatCommanServices.model.entity.user.UserContactId;
 import com.iti.client.view.MainClass;
 import java.net.URL;
 import java.rmi.RemoteException;
@@ -113,11 +114,13 @@ public class AddFriendWindowController extends ParentMenuBarController{
                     ArrayList<User> invitations=new ArrayList<>();
                     invitations= mainClass.getServerServiceLocator().getInvitationService().getInvitationsUsingSenderPhone(mainClass.getUser().getPhno());
                     boolean invitationFlag=false;
-                    for(int i=0;(i<invitations.size())&&(!invitationFlag);i++){
-                        if(invitations.get(i).getPhno().equals(text)){
-                            invitationFlag=true;
-                        }
+                    if((invitations.isEmpty())==false){
+                        for(int i=0;(i<invitations.size())&&(!invitationFlag);i++){
+                            if(invitations.get(i).getPhno().equals(text)){
+                                invitationFlag=true;
+                            }
 
+                        }
                     }
                     System.out.println(invitationFlag);
                     if(invitationFlag){
@@ -168,14 +171,15 @@ public class AddFriendWindowController extends ParentMenuBarController{
         }
     }
     public void addFriends(ActionEvent action){
+        //todo need to be done
         List<String> numbers = listView.getItems();
-        ArrayList<UserContact> contact = new ArrayList<>();
+        ArrayList<UserContactId> contact = new ArrayList<>();
         String userPhoneNumber=mainClass.getUser().getPhno();
         for (int i = 0; i < numbers.size(); i++) {
-            UserContact userContact=new UserContact();
-            userContact.setPhno(userPhoneNumber);
-            userContact.setContactPhno(numbers.get(i));
-            contact.add(userContact);
+            UserContactId userContactId=new UserContactId();
+            userContactId.setPhoneNumber(userPhoneNumber);
+            userContactId.setContact(numbers.get(i));
+            contact.add(userContactId);
         }
         try {
             mainClass.getServerServiceLocator().getInvitationService().addContact(contact);

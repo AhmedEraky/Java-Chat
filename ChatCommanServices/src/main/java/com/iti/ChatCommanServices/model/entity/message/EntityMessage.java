@@ -1,7 +1,6 @@
 package com.iti.ChatCommanServices.model.entity.message;
 
 import com.iti.ChatCommanServices.model.entity.user.User;
-
 import java.io.Serializable;
 import java.sql.Timestamp;
 

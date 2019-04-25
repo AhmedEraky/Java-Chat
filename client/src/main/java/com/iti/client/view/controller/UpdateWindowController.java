@@ -94,7 +94,7 @@ public class UpdateWindowController implements Initializable {
         mainClass.getStage().setTitle("Update");
         User user = mainClass.getUser();
         ReadOnlyStringWrapper phoneNumber = new ReadOnlyStringWrapper(user.getPhno());
-        imageByte = user.getPhoto();
+        imageByte = user.getImage();
         phoneTF.textProperty().bind(phoneNumber);
         countries= DataFactory.getCountriesList();
         countryCB.setItems(countries);
@@ -105,7 +105,7 @@ public class UpdateWindowController implements Initializable {
         lastNameTF.setText(user.getLastName());
         countryCB.setValue(user.getCountry());
         genderCB.setValue(user.getGender());
-        profileImage.setImage(new Image(new ByteArrayInputStream(user.getPhoto())));
+        profileImage.setImage(new Image(new ByteArrayInputStream(user.getImage())));
         uploadImageBtn.setOnAction(this::changePhoto);
         confirmBtn.setOnAction(this::updateUserData);
         cancelBtn.setOnAction(this::returnToHome);
@@ -138,7 +138,7 @@ public class UpdateWindowController implements Initializable {
         user.setLastName(lastNameTF.getText());
         user.setEmail(emailTF.getText());
         user.setPassword(passwordTF.getText());
-        user.setPhoto(imageByte);
+        user.setImage(imageByte);
         user.setStatus("onlineAvailable");
         if(countryCB.getValue()==null)
             user.setCountry("");
@@ -150,7 +150,7 @@ public class UpdateWindowController implements Initializable {
         else
         user.setGender(genderCB.getValue().toString());
         java.sql.Date gettedDatePickerDate=java.sql.Date.valueOf(datePicker.getValue());
-        user.setDatBirth(gettedDatePickerDate);
+        user.setDateBirth(gettedDatePickerDate);
         user.setBio(bioTA.getText());
         if(validator.validate(user, confirmationTF.getText() )){
             try {

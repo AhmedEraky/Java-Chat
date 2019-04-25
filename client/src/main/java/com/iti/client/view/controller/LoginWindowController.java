@@ -105,9 +105,9 @@ public class LoginWindowController implements Initializable {
             entityLogin.setPhno(phone);
             entityLogin.setPassword(password);
             try {
+                 mainClass.getServerServiceLocator().getEnteranceService().login(entityLogin);
                 User user = mainClass.getServerServiceLocator().getUpdateService().getProfileData(phone);
                 mainClass.setUser(user);
-                mainClass.getServerServiceLocator().getEnteranceService().login(entityLogin);
                 OutputStream output = null;
                 Properties properties = new Properties();
                 InputStream inputStream = null;

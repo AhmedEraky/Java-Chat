@@ -1,132 +1,45 @@
-<<<<<<< HEAD
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\view\MainClass.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\model\ServerClientEnteranceImplementation.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\model\dao\LoginDao.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\model\serverInterfaceImplementation\SereverImpelementation.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\view\factory\ParentFactory.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\model\dao\implementation\UserGroupDaoImplementation.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\model\dao\implementation\ChatDaoImplementation.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\view\controller\OnlineOfflineWindowController.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\admin\modal\implementation\AdminModelImplementation.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\view\controller\ServerHomeWindowController.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\controller\ServerSetup.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\model\dao\implementation\UserContactDaoImplementation.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\model\dao\GroupChatDao.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\model\dao\implementation\UserDaoImplementation.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\model\dao\UserChatDao.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\controller\ServerController.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\model\ServerClientRegisterationImplementation.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\view\factory\DataFactory.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\model\ServerClientUpdationImplementation.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\view\controller\DisplayUsersController.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\view\controller\RegistrationWindowController.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\model\statistacs\SerevrInterface.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\model\dao\implementation\UserChatDaoImplementaion.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\model\utils\ServerUtils.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\model\dao\UserDao.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\model\dao\ChatDao.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\model\ServerClientInvitationImplementation.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\model\dao\UserInvitationDao.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\model\dat\Statue.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\model\dao\implementation\GroupChatDaoImplementation.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\model\ServerChatImplementation.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\view\controller\CountriesWindowController.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\view\validation\ValidationInterface.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\admin\modal\AdminModel.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\model\dal\cfg\DBConnection.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\model\dao\implementation\LoginDaoImplementation.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\view\validation\implementation\ValidationImplementation.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\view\controller\MaleFemaleStatWindowController.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\model\dao\implementation\UserInvitationDaoImplementation.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\model\utils\implementation\ServerUtilsImplementation.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\model\dao\UserContactDao.java
-C:\Users\Eraky\Desktop\New folder\Aya Java chat\JavaChat-master\server\src\main\java\com\iti\server\model\dao\UserGroupDao.java
-=======
-<<<<<<< HEAD
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\model\dao\implementation\UserGroupDaoImplementation.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\model\ServerChatImplementation.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\model\dao\UserContactDao.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\model\dao\UserChatDao.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\view\controller\OnlineOfflineWindowController.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\model\utils\ServerUtils.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\admin\modal\AdminModel.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\model\dao\implementation\LoginDaoImplementation.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\model\utils\implementation\ServerUtilsImplementation.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\view\controller\RegistrationWindowController.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\view\validation\implementation\ValidationImplementation.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\model\ServerClientInvitationImplementation.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\view\MainClass.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\model\dao\GroupChatDao.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\model\ServerClientRegisterationImplementation.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\model\dao\implementation\UserContactDaoImplementation.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\view\controller\CountriesWindowController.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\model\dao\implementation\UserInvitationDaoImplementation.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\controller\ServerSetup.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\model\dao\UserInvitationDao.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\view\factory\DataFactory.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\model\dao\implementation\ChatDaoImplementation.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\view\validation\ValidationInterface.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\view\factory\ParentFactory.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\model\serverInterfaceImplementation\SereverImpelementation.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\model\dao\UserDao.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\model\dao\implementation\UserDaoImplementation.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\model\dao\ChatDao.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\model\dao\implementation\GroupChatDaoImplementation.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\model\ServerClientUpdationImplementation.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\view\controller\MaleFemaleStatWindowController.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\model\ServerClientEnteranceImplementation.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\view\controller\ServerHomeWindowController.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\admin\modal\implementation\AdminModelImplementation.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\model\dao\LoginDao.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\model\dat\Statue.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\model\dao\implementation\UserChatDaoImplementaion.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\controller\ServerController.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\model\dao\UserGroupDao.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\model\dal\cfg\DBConnection.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\model\serverInterface\SerevrInterface.java
-E:\ITI\Java\project\finalfinal\JavaChat-master\server\src\main\java\com\iti\server\view\controller\DisplayUsersController.java
-=======
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\admin\modal\AdminModel.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\view\factory\ParentFactory.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\model\dao\implementation\UserChatDaoImplementaion.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\view\controller\DisplayUsersController.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\controller\ServerSetup.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\model\dao\implementation\ChatDaoImplementation.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\model\dat\Statue.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\model\serverInterfaceImplementation\SereverImpelementation.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\model\dao\UserChatDao.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\model\dao\UserInvitationDao.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\model\dao\implementation\UserGroupDaoImplementation.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\model\dao\UserDao.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\model\dao\implementation\LoginDaoImplementation.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\model\dao\implementation\UserContactDaoImplementation.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\model\dao\implementation\UserDaoImplementation.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\model\dao\implementation\UserInvitationDaoImplementation.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\model\ServerClientUpdationImplementation.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\model\ServerClientRegisterationImplementation.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\model\dao\GroupChatDao.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\model\ServerClientInvitationImplementation.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\view\controller\ServerHomeWindowController.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\view\controller\RegistrationWindowController.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\view\validation\ValidationInterface.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\admin\modal\implementation\AdminModelImplementation.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\model\utils\implementation\ServerUtilsImplementation.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\model\dao\UserContactDao.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\view\MainClass.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\model\dao\ChatDao.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\view\controller\CountriesWindowController.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\model\dal\cfg\DBConnection.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\model\dao\implementation\GroupChatDaoImplementation.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\view\controller\OnlineOfflineWindowController.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\model\statistacs\SerevrInterface.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\model\ServerChatImplementation.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\view\validation\implementation\ValidationImplementation.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\model\utils\ServerUtils.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\model\ServerClientEnteranceImplementation.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\model\dao\LoginDao.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\controller\ServerController.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\model\dao\UserGroupDao.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\view\controller\MaleFemaleStatWindowController.java
-D:\ITI\Chat Project Ui\JavaChat-master\server\src\main\java\com\iti\server\view\factory\DataFactory.java
->>>>>>> 6ba5f76ce2eaf9f9de46daf2336320d20363b0d9
->>>>>>> 29c1a522674d410ec30b36fb78ca83c76b1c3b8b
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\view\controller\RegistrationWindowController.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\view\controller\AdvirtisingWindowController.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\model\dao\GroupChatDao.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\view\validation\implementation\ValidationImplementation.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\model\dao\implementation\GroupChatDaoImplementation.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\model\utils\implementation\ServerUtilsImplementation.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\model\dao\UserContactDao.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\model\dao\implementation\UserInvitationDaoImplementation.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\view\factory\ParentFactory.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\model\dao\LoginDao.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\model\dao\implementation\MessageSettingDaoImp.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\model\dat\Statue.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\model\dao\implementation\ChatDaoImplementation.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\model\dao\implementation\UserDaoImplementation.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\model\ServerClientUpdationImplementation.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\model\dao\implementation\LoginDaoImplementation.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\admin\modal\AdminModel.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\view\controller\OnlineOfflineWindowController.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\model\dao\UserChatDao.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\model\ServerClientInvitationImplementation.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\model\ServerClientRegisterationImplementation.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\view\controller\DisplayUsersController.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\admin\modal\implementation\AdminModelImplementation.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\controller\ServerController.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\model\ServerClientEnteranceImplementation.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\model\dao\UserGroupDao.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\view\MainClass.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\model\dao\implementation\UserContactDaoImplementation.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\model\dal\cfg\DBConnection.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\view\factory\DataFactory.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\model\ServerChatImplementation.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\model\dao\UserDao.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\model\serverInterfaceImplementation\SereverImpelementation.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\model\dao\implementation\UserChatDaoImplementaion.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\model\statistacs\ServerInterface.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\model\dao\ChatDao.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\model\utils\ServerUtils.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\model\dao\MessageSetingDao.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\controller\ServerSetup.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\view\controller\CountriesWindowController.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\model\dao\implementation\UserGroupDaoImplementation.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\view\controller\ServerHomeWindowController.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\view\controller\MaleFemaleStatWindowController.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\view\validation\ValidationInterface.java
+F:\Study\iti\project\java chat\server\src\main\java\com\iti\server\model\dao\UserInvitationDao.java

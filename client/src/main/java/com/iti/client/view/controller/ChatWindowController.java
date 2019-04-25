@@ -165,7 +165,7 @@ public class ChatWindowController extends ParentMenuBarController {
                         if (!empty) {
                             HBox hbox = new HBox();
                             ImageView friendImage=new ImageView();
-                            byte [] imageByte = user.getPhoto();
+                            byte [] imageByte = user.getImage();
                             friendImage.setFitHeight(30);
                             friendImage.setFitWidth(30);
                             friendImage.setImage(new Image(new ByteArrayInputStream(imageByte)));
@@ -194,7 +194,6 @@ public class ChatWindowController extends ParentMenuBarController {
                                 Label labelNewMessage = new Label();
                                 labelNewMessage.setText(message.getMessage());
                                 labelNewMessage.setAlignment(Pos.CENTER);
-
                                 labelNewMessage.setStyle("-fx-font-family:"+message.getMessageSettings().getFontStyle());
                                 labelNewMessage.setStyle(labelNewMessage.getStyle()+"; -fx-font-size: "+message.getMessageSettings().getFontSize());
                                 labelNewMessage.setStyle(labelNewMessage.getStyle()+"; -fx-text-fill: "+message.getMessageSettings().getFontColor());
@@ -204,13 +203,17 @@ public class ChatWindowController extends ParentMenuBarController {
                                     labelNewMessage.setStyle(labelNewMessage.getStyle()+" ; -fx-font-weight: bold ");
 
                                 ImageView senderImage=new ImageView();
-                                senderImage.setImage(new Image(new ByteArrayInputStream(mainClass.getUser().getPhoto())));
+                                senderImage.setImage(new Image(new ByteArrayInputStream(mainClass.getUser().getImage())));
                                 senderImage.setFitWidth(20);
                                 senderImage.setFitHeight(20);
                                 hBox.getChildren().add(labelNewMessage);
                                 hBox.getChildren().add(senderImage);
-                                setGraphic(hBox);
-                            }else
+
+                                Platform.runLater(() -> {
+                                    setGraphic(hBox);
+                                });
+                            }
+                            else
                             {
                                 HBox hBox = new HBox();
                                 hBox.setAlignment(Pos.BASELINE_LEFT);
@@ -228,18 +231,26 @@ public class ChatWindowController extends ParentMenuBarController {
 
 
                                 ImageView senderImage=new ImageView();
-                                senderImage.setImage(new Image(new ByteArrayInputStream(message.getSenderUser().getPhoto())));
+                                senderImage.setImage(new Image(new ByteArrayInputStream(message.getSenderUser().getImage())));
                                 senderImage.setFitWidth(20);
                                 senderImage.setFitHeight(20);
                                 hBox.getChildren().add(senderImage);
                                 hBox.getChildren().add(labelNewMessage);
-                                setGraphic(hBox);
+                                Platform.runLater(() -> {
+                                    setGraphic(hBox);
+                                });
+
                             }
                         }
                     }
                 };
             }
         });
+
+
+
+
+
         friendsList.setOnMouseClicked(this::startChatingWith);
         ObservableList<String> fontsObservableList = FXCollections.observableArrayList();
         fontsObservableList.addAll("Consolas","Ebrima","Bauhaus 93");
@@ -360,9 +371,8 @@ public class ChatWindowController extends ParentMenuBarController {
         try {
             chatID= mainClass.getServerServiceLocator().getChatService().startChating(mainClass.getUser(),otherContact);
             if(!chatSession.containsValue(chatID)){
-
                 ObservableList<EntityMessage> messages=FXCollections.observableArrayList();
-                messages.addAll(mainClass.getServerServiceLocator().getChatService().getMessages(chatID));
+                messages.addAll(mainClass.getServerServiceLocator().getChatService().getMessages(chatID,mainClass.getUser()));
                 chatSession.put(chatID,messages);
                 if (otherContact.getStatus().equals("offline")){
                     newMessageTF.setDisable(true);
@@ -389,14 +399,7 @@ public class ChatWindowController extends ParentMenuBarController {
         entityMessage.setSenderUser(mainClass.getUser());
         entityMessage.setId(chatID);
         MessageSettings messageSettings=getMessageSetting();
-        try {
-
-            String styleID=mainClass.getServerServiceLocator().getChatService().validateStyle(messageSettings);
-            entityMessage.setMessageSettings(messageSettings);
-
-        } catch (RemoteException e) {
-            e.printStackTrace();
-        }
+        entityMessage.setMessageSettings(messageSettings);
         chatSession.get(chatID).add(entityMessage);
         if (!entityMessage.getMessage().equals("")) {
             Platform.runLater(() -> {
@@ -415,7 +418,6 @@ public class ChatWindowController extends ParentMenuBarController {
 
     public void addNewMessage(EntityMessage message){
         message.setMessage(message.getMessage().trim());
-
         if(!chatID.equals("")&&chatID.equals(message.getId())) {
             chatSession.get(chatID).add(message);
             if(chatBotFlag){

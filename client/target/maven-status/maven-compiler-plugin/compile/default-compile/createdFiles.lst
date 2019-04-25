@@ -17,7 +17,6 @@ com\iti\client\view\controller\GroupChatWindowController.class
 com\iti\client\view\controller\InvitationWindowController.class
 com\iti\client\controller\ServerServiceLocator.class
 com\iti\client\model\xml\UserType.class
-com\iti\client\view\MainClass.class
 com\iti\client\view\custom\dialog\PasswordDialog.class
 com\iti\client\view\controller\RegistrationWindowController.class
 com\iti\client\view\controller\ChatWindowController$2.class

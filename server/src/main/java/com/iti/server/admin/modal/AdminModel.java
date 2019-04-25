@@ -7,6 +7,8 @@ package com.iti.server.admin.modal;
 
 import com.iti.ChatCommanServices.model.entity.user.User;
 import com.iti.ChatCommanServices.model.exception.RegistrationDuplicateException;
+import org.hibernate.Session;
+
 import java.util.ArrayList;
 
 /**
@@ -15,7 +17,7 @@ import java.util.ArrayList;
  */
 public interface AdminModel {
     public void addClientByAdmin(User user) throws RegistrationDuplicateException;
-    public ArrayList<User> displayUsers();
+    public ArrayList<User> displayUsers( );
     public void updateUser(User user) throws RegistrationDuplicateException;
     public void deleteUser(String phoneNumber);
 }
